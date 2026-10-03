@@ -1,0 +1,15 @@
+{
+  "name": "signisl",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SignISL - AI-Powered Indian Sign Language Portal",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
+}
