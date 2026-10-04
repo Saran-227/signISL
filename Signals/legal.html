@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Legal & Courts - SignISL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+<div id="nav-root"></div>
+<main>
+
+<section class="page-hero">
+  <div class="page-hero-orb" style="width:480px;height:480px;bottom:-100px;right:-80px;background:radial-gradient(circle,rgba(255,107,107,.16),transparent 70%);"></div>
+  <div class="wrap" style="text-align:center;position:relative;z-index:1;padding:64px clamp(20px,4vw,60px);">
+    <span class="badge badge-c" style="margin-bottom:16px;">Legal &amp; Courts</span>
+    <h1 class="h1" style="color:#fff;margin-bottom:14px;font-size:clamp(32px,5vw,52px);">ISL Accessibility for Legal Proceedings &amp; Courts</h1>
+    <p class="sub" style="color:rgba(255,255,255,.6);max-width:580px;margin:0 auto 32px;line-height:1.8;">Ensuring deaf individuals have full, equal access to justice - in courtrooms, police stations, and legal consultations across India.</p>
+    <button onclick="openFounderModal()" class="btn btn-v" style="height:52px;font-size:15px;">Request a Legal Demo →</button>
+  </div>
+</section>
+
+<!-- Illustration + Problem -->
+<section class="section section-white" style="padding:100px 0;">
+  <div class="wrap">
+    <div class="grid-2" style="gap:48px;align-items:center;">
+      <!-- SVG: Courtroom scene -->
+      <div>
+        <svg viewBox="0 0 500 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:20px;display:block;box-shadow:0 16px 48px rgba(45,42,142,.1);">
+          <defs>
+            <linearGradient id="courtBg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#F2EDE8"/><stop offset="100%" stop-color="#E8E0D8"/></linearGradient>
+            <linearGradient id="woodPanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#8B6830"/><stop offset="100%" stop-color="#6B4E20"/></linearGradient>
+          </defs>
+          <!-- Background -->
+          <rect width="500" height="360" fill="url(#courtBg)"/>
+          <!-- Back wall panels (wood panelling) -->
+          <rect x="0" y="0" width="500" height="200" fill="#EAE0D4"/>
+          <rect x="0" y="180" width="500" height="5" fill="#8B6830" opacity=".35"/>
+          <!-- Vertical wood panels -->
+          <rect x="0" y="0" width="8" height="180" fill="#C8B890" opacity=".4"/>
+          <rect x="60" y="0" width="4" height="180" fill="#C8B890" opacity=".3"/>
+          <rect x="140" y="0" width="4" height="180" fill="#C8B890" opacity=".3"/>
+          <rect x="240" y="0" width="4" height="180" fill="#C8B890" opacity=".3"/>
+          <rect x="340" y="0" width="4" height="180" fill="#C8B890" opacity=".3"/>
+          <rect x="440" y="0" width="4" height="180" fill="#C8B890" opacity=".3"/>
+          <!-- Indian flag on wall -->
+          <rect x="440" y="15" width="3" height="60" fill="#3A3A5A"/>
+          <rect x="443" y="15" width="22" height="8" fill="#FF6B00"/>
+          <rect x="443" y="23" width="22" height="8" fill="#fff"/>
+          <rect x="443" y="31" width="22" height="8" fill="#1A7A1A"/>
+          <!-- Judge's bench (elevated) -->
+          <rect x="150" y="90" width="200" height="100" rx="6" fill="url(#woodPanel)"/>
+          <rect x="150" y="88" width="200" height="12" rx="3" fill="#9A7840"/>
+          <!-- Judge figure -->
+          <circle cx="250" cy="68" r="16" fill="#C8A880"/>
+          <path d="M235,68 Q235,50 250,47 Q265,50 265,68 Z" fill="#1A1A2E"/>
+          <rect x="232" y="85" width="36" height="45" rx="7" fill="#1A1A2E"/>
+          <!-- Scales of justice on bench -->
+          <line x1="250" y1="92" x2="250" y2="110" stroke="#B8971F" stroke-width="1.5"/>
+          <line x1="232" y1="105" x2="268" y2="105" stroke="#B8971F" stroke-width="1.5"/>
+          <line x1="232" y1="105" x2="229" y2="115" stroke="#B8971F" stroke-width="1.2"/>
+          <line x1="268" y1="105" x2="271" y2="115" stroke="#B8971F" stroke-width="1.2"/>
+          <ellipse cx="229" cy="116" rx="8" ry="4" fill="rgba(184,151,31,.25)" stroke="#B8971F" stroke-width="1"/>
+          <ellipse cx="271" cy="116" rx="8" ry="4" fill="rgba(184,151,31,.25)" stroke="#B8971F" stroke-width="1"/>
+          <!-- ISL Screen beside witness box -->
+          <rect x="350" y="100" width="90" height="120" rx="6" fill="#0A0E1A" stroke="#2A3A5A" stroke-width="2"/>
+          <rect x="352" y="102" width="86" height="116" rx="5" fill="#0C1220"/>
+          <!-- Avatar on court screen -->
+          <circle cx="395" cy="145" r="18" fill="#7B6FE8" opacity=".9"/>
+          <rect x="382" y="164" width="26" height="34" rx="8" fill="#5B4FCF" opacity=".88"/>
+          <line x1="382" y1="174" x2="368" y2="158" stroke="#9B8FF8" stroke-width="3" stroke-linecap="round"/>
+          <line x1="408" y1="174" x2="422" y2="158" stroke="#9B8FF8" stroke-width="3" stroke-linecap="round"/>
+          <text x="395" y="208" text-anchor="middle" fill="#00C9A7" font-size="7" font-family="sans-serif">ISL Active</text>
+          <!-- Lawyer at bar (left) -->
+          <circle cx="80" cy="180" r="14" fill="#B88858"/>
+          <path d="M67,180 Q67,163 80,160 Q93,163 93,180 Z" fill="#0A0808"/>
+          <rect x="67" y="195" width="26" height="50" rx="7" fill="#1A1A2E"/>
+          <!-- Lawyer (right) -->
+          <circle cx="420" cy="180" r="14" fill="#C8A880"/>
+          <path d="M407,180 Q407,163 420,160 Q433,163 433,180 Z" fill="#2A1A0A"/>
+          <rect x="407" y="195" width="26" height="50" rx="7" fill="#3A3A5A"/>
+          <!-- Deaf person in witness box -->
+          <rect x="45" y="135" width="65" height="90" rx="6" fill="#D8C8A8" opacity=".7" stroke="#B8A888" stroke-width="1.5"/>
+          <circle cx="77" cy="155" r="13" fill="#C09060"/>
+          <path d="M65,155 Q65,139 77,136 Q89,139 89,155 Z" fill="#2A1A08"/>
+          <!-- Hearing aid -->
+          <circle cx="88" cy="149" r="3.5" fill="#FFB830" opacity=".85"/>
+          <rect x="65" y="169" width="24" height="40" rx="6" fill="#4A6A9A" opacity=".8"/>
+          <!-- ISL signing gesture -->
+          <ellipse cx="55" cy="178" rx="9" ry="7" fill="#C09060" transform="rotate(-25,55,178)"/>
+          <!-- Public gallery (back rows) -->
+          <rect x="0" y="270" width="500" height="90" fill="#D8D0C4"/>
+          <rect x="0" y="268" width="500" height="5" fill="#8B6830" opacity=".4"/>
+          <!-- Seated audience figures -->
+          <g transform="translate(40,285)"><circle cx="0" cy="0" r="8" fill="#B8A888"/><rect x="-7" y="9" width="14" height="22" rx="4" fill="#8A8080"/></g>
+          <g transform="translate(90,285)"><circle cx="0" cy="0" r="8" fill="#C8B898"/><rect x="-7" y="9" width="14" height="22" rx="4" fill="#6A8080"/></g>
+          <g transform="translate(140,285)"><circle cx="0" cy="0" r="8" fill="#A09080"/><rect x="-7" y="9" width="14" height="22" rx="4" fill="#484858"/></g>
+          <g transform="translate(200,285)"><circle cx="0" cy="0" r="8" fill="#C09070"/><rect x="-7" y="9" width="14" height="22" rx="4" fill="#3A5080"/></g>
+          <g transform="translate(260,285)"><circle cx="0" cy="0" r="8" fill="#B8A080"/><rect x="-7" y="9" width="14" height="22" rx="4" fill="#506060"/></g>
+          <!-- Floor -->
+          <rect x="0" y="220" width="500" height="50" fill="#C8B898" opacity=".6"/>
+          <!-- Warm subtle overlay -->
+          <rect width="500" height="360" fill="rgba(255,240,200,.02)"/>
+        </svg>
+      </div>
+      <div>
+        <span class="eyebrow">Equal Access to Justice</span>
+        <h2 class="h2" style="margin-bottom:16px;">Every Deaf Individual Deserves to Understand Every Word</h2>
+        <p style="font-family:var(--fb);font-size:16px;color:var(--mu);line-height:1.8;margin-bottom:16px;">In courtrooms, police stations, and legal consultations across India, deaf individuals are routinely denied equal access to proceedings because no ISL interpreter is available. This is a fundamental denial of justice.</p>
+        <p style="font-family:var(--fb);font-size:16px;color:var(--mu);line-height:1.8;margin-bottom:24px;">SignISL places an ISL avatar screen beside the witness box, at the police counter, or on a lawyer's tablet - so every spoken word is simultaneously signed in ISL, in real time, without any human interpreter needed.</p>
+        <div style="background:#FFF5F5;border:1px solid rgba(255,107,107,.2);border-radius:14px;padding:18px 20px;">
+          <div style="font-family:var(--fn);font-size:14px;font-weight:700;color:#C83030;margin-bottom:6px;">Judiciary Accessibility Mandate</div>
+          <p style="font-family:var(--fb);font-size:13px;color:var(--mu);line-height:1.7;margin:0;">The RPWD Act 2016 requires all public authorities to provide ISL interpretation for deaf persons in official proceedings. SignISL provides a scalable, always-available solution.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How it Works -->
+<section class="section section-bg" style="padding:100px 0;">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">How It Works</span>
+      <h2 class="h2" style="margin-bottom:40px;">Real-Time ISL in Legal Proceedings</h2>
+    </div>
+    <div class="how-row">
+      <div class="how-step">
+        <div class="ic" style="background:rgba(255,107,107,.12);margin-bottom:12px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF6B6B" stroke-width="2.5" stroke-linecap="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/></svg></div>
+        <div class="sn">STEP 01</div>
+        <h3>Proceedings Begin</h3>
+        <ul><li>Judge or lawyer speaks</li><li>Microphone captures audio</li><li>SignISL activated in court</li></ul>
+      </div>
+      <div class="conn"><div class="conn-line"><div class="conn-dot" style="background:#FF6B6B;"></div></div></div>
+      <div class="how-step">
+        <div class="ic" style="background:rgba(91,79,207,.12);margin-bottom:12px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5B4FCF" stroke-width="2.5" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <div class="sn">STEP 02</div>
+        <h3>AI Translates to ISL</h3>
+        <ul><li>Speech converted to ISL gloss</li><li>Legal terminology accurate</li><li>Sub-200ms delay</li></ul>
+      </div>
+      <div class="conn"><div class="conn-line"><div class="conn-dot" style="background:#00C9A7;"></div></div></div>
+      <div class="how-step">
+        <div class="ic" style="background:rgba(0,201,167,.12);margin-bottom:12px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00C9A7" stroke-width="2.5" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/></svg></div>
+        <div class="sn">STEP 03</div>
+        <h3>Deaf Party Follows Live</h3>
+        <ul><li>Avatar signs on screen</li><li>Caption displayed below</li><li>Full understanding guaranteed</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Use Cases -->
+<section class="section section-white" style="padding:100px 0;">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Applications</span>
+      <h2 class="h2" style="margin-bottom:40px;">Legal &amp; Justice Use Cases</h2>
+    </div>
+    <div class="grid-3" style="gap:18px;">
+      <div class="card" style="padding:28px;border-left:4px solid #FF6B6B;"><div style="width:44px;height:44px;border-radius:12px;background:rgba(255,107,107,.1);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF6B6B" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3 class="h3" style="margin-bottom:8px;">Court Proceedings</h3><p style="font-family:var(--fb);font-size:13px;color:var(--mu);line-height:1.7;">Real-time ISL of all oral arguments, judge's remarks, and witness testimony.</p></div>
+      <div class="card" style="padding:28px;border-left:4px solid #7B6FE8;"><div style="width:44px;height:44px;border-radius:12px;background:rgba(123,111,232,.1);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7B6FE8" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.68a16 16 0 0 0 6.41 6.41l.98-.84a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg></div><h3 class="h3" style="margin-bottom:8px;">Police Statements</h3><p style="font-family:var(--fb);font-size:13px;color:var(--mu);line-height:1.7;">ISL during police questioning, FIR filing, and rights explanation to deaf individuals.</p></div>
+      <div class="card" style="padding:28px;border-left:4px solid #5B4FCF;"><div style="width:44px;height:44px;border-radius:12px;background:rgba(91,79,207,.1);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5B4FCF" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3 class="h3" style="margin-bottom:8px;">Legal Consultation</h3><p style="font-family:var(--fb);font-size:13px;color:var(--mu);line-height:1.7;">Lawyer-client meetings conducted entirely in ISL - confidential and complete.</p></div>
+      <div class="card" style="padding:28px;border-left:4px solid #FFB830;"><div style="width:44px;height:44px;border-radius:12px;background:rgba(255,184,48,.1);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFB830" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><h3 class="h3" style="margin-bottom:8px;">Tribunals &amp; Hearings</h3><p style="font-family:var(--fb);font-size:13px;color:var(--mu);line-height:1.7;">Administrative proceedings, consumer forums, and regulatory hearings made accessible.</p></div>
+      <div class="card" style="padding:28px;border-left:4px solid #00C9A7;"><div style="width:44px;height:44px;border-radius:12px;background:rgba(0,201,167,.1);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00C9A7" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><h3 class="h3" style="margin-bottom:8px;">Document Explanation</h3><p style="font-family:var(--fb);font-size:13px;color:var(--mu);line-height:1.7;">Legal documents, contracts, and judgments explained and signed in ISL.</p></div>
+      <div class="card" style="padding:28px;border-left:4px solid #FF6B6B;"><div style="width:44px;height:44px;border-radius:12px;background:rgba(255,107,107,.1);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF6B6B" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div><h3 class="h3" style="margin-bottom:8px;">Rights Information</h3><p style="font-family:var(--fb);font-size:13px;color:var(--mu);line-height:1.7;">Constitutional rights, bail conditions, and legal entitlements explained in ISL.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="section section-dark" style="padding:100px 0;">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" style="color:rgba(255,255,255,.4);">Technical Standards</span>
+      <h2 class="h2 white" style="margin-bottom:40px;">Built for the Justice System</h2>
+    </div>
+    <div class="grid-2" style="gap:0;max-width:700px;margin:0 auto;">
+      <div class="feat-item"><div class="feat-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00C9A7" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><h4 style="color:#fff;">Judiciary Accessibility Mandate</h4><p style="color:rgba(255,255,255,.45);">Compliant with RPWD Act 2016 requirements for accessible judicial proceedings.</p></div></div>
+      <div class="feat-item"><div class="feat-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00C9A7" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><h4 style="color:#fff;">Admissible Accessibility Aid</h4><p style="color:rgba(255,255,255,.45);">Recognised as an accessibility tool, not an interpreter - admissible in Indian courts.</p></div></div>
+      <div class="feat-item"><div class="feat-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00C9A7" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><h4 style="color:#fff;">Legal ISL Vocabulary</h4><p style="color:rgba(255,255,255,.45);">Trained specifically on legal and judicial ISL terminology for accuracy.</p></div></div>
+      <div class="feat-item"><div class="feat-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00C9A7" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><h4 style="color:#fff;">Secure &amp; Confidential</h4><p style="color:rgba(255,255,255,.45);">No data stored. Processing in-memory only. Legal confidentiality preserved.</p></div></div>
+      <div class="feat-item"><div class="feat-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00C9A7" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><h4 style="color:#fff;">Court Recording Compatible</h4><p style="color:rgba(255,255,255,.45);">Works alongside existing court recording and transcription systems seamlessly.</p></div></div>
+      <div class="feat-item"><div class="feat-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00C9A7" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><h4 style="color:#fff;">District Court Pilots</h4><p style="color:rgba(255,255,255,.45);">Currently in pilot programme with district courts - contact founders for details.</p></div></div>
+    </div>
+    <div style="text-align:center;margin-top:48px;">
+      <button onclick="openFounderModal()" class="btn btn-v" style="height:56px;padding:0 36px;font-size:16px;">Discuss Legal Deployment →</button>
+    </div>
+  </div>
+</section>
+
+</main>
+<div id="footer-root"></div>
+<button id="stu" onclick="scrollTop()">↑</button>
+<script src="shared.js"></script>
+</body>
+</html>

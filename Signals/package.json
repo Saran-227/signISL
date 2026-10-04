@@ -1,0 +1,12 @@
+{
+  "name": "signisl-signals",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SignISL Signals subfolder",
+  "scripts": {
+    "dev": "vite --port 3000 --open",
+    "start": "vite --port 3000 --open",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+}

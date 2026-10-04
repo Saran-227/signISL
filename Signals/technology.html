@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The AI Technology Stack - SignISL</title>
+  <meta name="description" content="Discover the neural architecture behind SignISL: a real-time, sub-200ms pipeline transforming speech and text into 3D Indian Sign Language synthesis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@1,6..72,300;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared.css">
+</head>
+<body>
+<div id="nav-root"></div>
+
+<main>
+  <!-- ═══ CONNECTED ROADMAP PIPELINE (SCROLL-DRIVEN) ═══ -->
+  <section class="tech-roadmap-section" id="roadmap">
+    <div class="wrap" style="text-align:center;margin-bottom:56px;position:relative;z-index:2;">
+      <span style="font-family:var(--font-body);font-size:11.5px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.65);">Interactive Architecture Roadmap</span>
+      <h2 style="font-family:var(--font-heading);font-style:normal;font-size:clamp(30px,3.4vw,44px);color:#FFFFFF;font-weight:750;letter-spacing:-0.03em;margin-top:8px;margin-bottom:12px;">Step-by-Step Neural Pipeline</h2>
+      <p style="font-family:var(--font-body);font-size:15px;color:rgba(255,255,255,0.7);max-width:580px;margin:0 auto;">Scroll to follow the real-time execution flow connecting input ingestion to 60fps avatar delivery.</p>
+    </div>
+
+    <div class="roadmap-wrap">
+      <!-- Central Animated Spine -->
+      <div class="roadmap-spine" id="roadmapSpine">
+        <div class="roadmap-spine-progress" id="roadmapProgress"></div>
+      </div>
+
+      <!-- Stage 01 -->
+      <div class="roadmap-item" data-step="1">
+        <div class="roadmap-node">01</div>
+        <div class="roadmap-card">
+          <div class="roadmap-stage-pill">Stage 01 · Ingestion Layer</div>
+          <div class="roadmap-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+              <line x1="12" y1="19" x2="12" y2="23"/>
+              <line x1="8" y1="23" x2="16" y2="23"/>
+            </svg>
+          </div>
+          <h3>Multimodal Acoustic &amp; Text Ingestion</h3>
+          <p>
+            Continuous acoustic capture across 12+ Indian regional dialects (Hindi, Tamil, Telugu, Bengali, Kannada, Marathi, and more) plus live WebRTC audio streams, web DOM text selection, and clinical dictation feeds.
+          </p>
+          <div class="roadmap-tags">
+            <span class="roadmap-tag">WebRTC Audio Stream</span>
+            <span class="roadmap-tag">Noise-Robust ASR</span>
+            <span class="roadmap-tag">12+ Indian Languages</span>
+            <span class="roadmap-tag">DOM Text Hook</span>
+          </div>
+          <div style="margin-top:16px;">
+            <span class="roadmap-metric-badge">Pipeline Ingestion: &lt;35ms</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stage 02 -->
+      <div class="roadmap-item" data-step="2">
+        <div class="roadmap-node">02</div>
+        <div class="roadmap-card">
+          <div class="roadmap-stage-pill">Stage 02 · NLP Engine</div>
+          <div class="roadmap-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            </svg>
+          </div>
+          <h3>Multilingual Semantic &amp; Intent Parsing</h3>
+          <p>
+            Bidirectional neural transformer parses complex compound sentences, handling medical terminology, railway announcements, and colloquial regional idioms. Extracts core semantic predicates and intent without lexical loss.
+          </p>
+          <div class="roadmap-tags">
+            <span class="roadmap-tag">Bidirectional Attention</span>
+            <span class="roadmap-tag">Domain Tokenizer</span>
+            <span class="roadmap-tag">Colloquial Normalization</span>
+            <span class="roadmap-tag">Context Windowing</span>
+          </div>
+          <div style="margin-top:16px;">
+            <span class="roadmap-metric-badge">Semantic Extraction: &lt;40ms</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stage 03 -->
+      <div class="roadmap-item" data-step="3">
+        <div class="roadmap-node">03</div>
+        <div class="roadmap-card">
+          <div class="roadmap-stage-pill">Stage 03 · ISL Transformer</div>
+          <div class="roadmap-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+              <polyline points="2 17 12 22 22 17"/>
+              <polyline points="2 12 12 17 22 12"/>
+            </svg>
+          </div>
+          <h3>Spatial ISL Grammar &amp; Gloss Translation</h3>
+          <p>
+            Unlike spoken languages, Indian Sign Language uses a non-linear spatial grammar with Topic-Comment ordering and directional non-manual markers. Our proprietary transformer maps semantics directly into verified ISL Gloss taxonomy.
+          </p>
+          <div class="roadmap-tags">
+            <span class="roadmap-tag">Topic-Comment Syntax</span>
+            <span class="roadmap-tag">Spatial Grammar Matrix</span>
+            <span class="roadmap-tag">10,000+ Sign Database</span>
+            <span class="roadmap-tag">ISLRTC Compliant</span>
+          </div>
+          <div style="margin-top:16px;">
+            <span class="roadmap-metric-badge">Gloss Translation: &lt;45ms</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stage 04 -->
+      <div class="roadmap-item" data-step="4">
+        <div class="roadmap-node">04</div>
+        <div class="roadmap-card">
+          <div class="roadmap-stage-pill">Stage 04 · Kinematic Rigging</div>
+          <div class="roadmap-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3>Kinematic Interpolation &amp; 3D Motion Synthesis</h3>
+          <p>
+            Transforms discrete sign gloss tokens into continuous 60fps skeletal joint rotations (27 hand bones, wrists, elbows, and shoulder pivots). Integrates smooth co-articulation easing and realistic facial expression markers.
+          </p>
+          <div class="roadmap-tags">
+            <span class="roadmap-tag">27-Bone Hand Rig</span>
+            <span class="roadmap-tag">Co-Articulation Easing</span>
+            <span class="roadmap-tag">Facial Grammar Rig</span>
+            <span class="roadmap-tag">60 FPS Kinematics</span>
+          </div>
+          <div style="margin-top:16px;">
+            <span class="roadmap-metric-badge">Kinematic Synthesis: &lt;48ms</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stage 05 -->
+      <div class="roadmap-item" data-step="5">
+        <div class="roadmap-node">05</div>
+        <div class="roadmap-card">
+          <div class="roadmap-stage-pill">Stage 05 · Rendering &amp; Delivery</div>
+          <div class="roadmap-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <h3>Zero-Plugin WebGL Multi-Surface Distribution</h3>
+          <p>
+            Lightweight client-side WebGL / WebGPU avatar engine that runs seamlessly across any browser, low-spec Android devices, hospital bedside tablets, and public railway LED arrival displays without installing apps or plugins.
+          </p>
+          <div class="roadmap-tags">
+            <span class="roadmap-tag">WebGL 2.0 / WebGPU</span>
+            <span class="roadmap-tag">Zero Plugins</span>
+            <span class="roadmap-tag">Cross-Platform</span>
+            <span class="roadmap-tag">Kiosk &amp; Display Ready</span>
+          </div>
+          <div style="margin-top:16px;">
+            <span class="roadmap-metric-badge">Render Frame Budget: 16.6ms (60 FPS)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stage 06 -->
+      <div class="roadmap-item" data-step="6">
+        <div class="roadmap-node">06</div>
+        <div class="roadmap-card">
+          <div class="roadmap-stage-pill">Stage 06 · Linguistic Validation</div>
+          <div class="roadmap-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <polyline points="9 12 11 14 15 10"/>
+            </svg>
+          </div>
+          <h3>Continuous Verification with Certified Deaf Educators</h3>
+          <p>
+            Continuous human-in-the-loop validation pipeline connected to certified Indian Sign Language teachers, deaf schools, and accessibility advocates across India to ensure regional vocabulary integrity, cultural respect, and grammatical precision.
+          </p>
+          <div class="roadmap-tags">
+            <span class="roadmap-tag">Certified ISL Educators</span>
+            <span class="roadmap-tag">RPWD Act 2016 Compliant</span>
+            <span class="roadmap-tag">WCAG 2.2 AA Certified</span>
+            <span class="roadmap-tag">Continuous Fine-Tuning</span>
+          </div>
+          <div style="margin-top:16px;">
+            <span class="roadmap-metric-badge">Human-in-the-Loop Feedback Loop</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TECHNICAL SPECIFICATIONS & ARCHITECTURE METRICS ═══ -->
+  <section class="tech-specs-section">
+    <div class="wrap">
+      <div style="text-align:center;margin-bottom:52px;">
+        <span style="font-family:var(--font-body);font-size:11.5px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.65);">Engineering Standards</span>
+        <h2 style="font-family:var(--font-heading);font-style:normal;font-size:clamp(28px,3.2vw,40px);color:#FFFFFF;font-weight:750;letter-spacing:-0.025em;margin-top:8px;">Core Architecture Specifications</h2>
+      </div>
+
+      <div class="grid-3" style="gap:24px;">
+        <div class="tech-spec-card">
+          <div style="width:38px;height:38px;border-radius:4px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.22);display:flex;align-items:center;justify-content:center;margin-bottom:18px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h4>Latency Budget Breakdown</h4>
+          <p>
+            ASR Audio Ingestion: 32ms<br>
+            Semantic &amp; Intent Parsing: 38ms<br>
+            ISL Gloss Spatial Transformer: 42ms<br>
+            Kinematic Joint Rigging: 48ms<br>
+            WebGL Frame Buffer: 16ms<br>
+            <strong style="color:#FFFFFF;display:inline-block;margin-top:6px;">Total Pipeline: ~176ms (Sub-200ms)</strong>
+          </p>
+        </div>
+
+        <div class="tech-spec-card">
+          <div style="width:38px;height:38px;border-radius:4px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.22);display:flex;align-items:center;justify-content:center;margin-bottom:18px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <h4>Edge &amp; Cloud Deployment</h4>
+          <p>
+            Modular microservices deployed with ONNX Runtime acceleration and WebAssembly fallback. Enables local execution in remote rural classrooms with zero external internet dependencies.
+          </p>
+        </div>
+
+        <div class="tech-spec-card">
+          <div style="width:38px;height:38px;border-radius:4px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.22);display:flex;align-items:center;justify-content:center;margin-bottom:18px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h4>Compliance &amp; Accessibility</h4>
+          <p>
+            Provisional Patent #202611005957. Full compliance with the Rights of Persons with Disabilities (RPWD) Act 2016 and WCAG 2.2 AA digital accessibility benchmarks.
+          </p>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:60px;">
+        <button onclick="openFounderModal()" class="btn btn-cover-secondary" style="height:48px;padding:0 30px;font-size:14.5px;">
+          Talk to Our AI Engineers →
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-root"></div>
+<button id="stu" onclick="scrollTop()">↑</button>
+
+<script>
+// Interactive Scroll-Driven Roadmap Progress & Activation
+(function() {
+  const items = document.querySelectorAll('.roadmap-item');
+  const progressLine = document.getElementById('roadmapProgress');
+  const spine = document.getElementById('roadmapSpine');
+
+  if (!items.length) return;
+
+  function updateRoadmapOnScroll() {
+    const windowH = window.innerHeight;
+    const triggerPoint = windowH * 0.72;
+
+    let highestActiveIndex = -1;
+
+    items.forEach((item, index) => {
+      const rect = item.getBoundingClientRect();
+      if (rect.top <= triggerPoint) {
+        item.classList.add('is-active');
+        highestActiveIndex = index;
+      } else {
+        item.classList.remove('is-active');
+      }
+    });
+
+    if (spine && progressLine && highestActiveIndex >= 0) {
+      const activeItem = items[highestActiveIndex];
+      const spineRect = spine.getBoundingClientRect();
+      const node = activeItem.querySelector('.roadmap-node');
+      if (node) {
+        const nodeRect = node.getBoundingClientRect();
+        const progressPx = Math.max(0, (nodeRect.top + nodeRect.height / 2) - spineRect.top);
+        const totalHeight = spineRect.height;
+        const pct = Math.min(100, Math.max(0, (progressPx / totalHeight) * 100));
+        progressLine.style.height = pct + '%';
+      }
+    } else if (progressLine && highestActiveIndex === -1) {
+      progressLine.style.height = '0%';
+    }
+  }
+
+  window.addEventListener('scroll', updateRoadmapOnScroll, { passive: true });
+  window.addEventListener('resize', updateRoadmapOnScroll, { passive: true });
+  setTimeout(updateRoadmapOnScroll, 100);
+})();
+</script>
+
+<script src="shared.js"></script>
+</body>
+</html>

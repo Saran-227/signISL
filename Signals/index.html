@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SignISL — AI-Powered Indian Sign Language for Everyone</title>
+<meta name="description" content="SignISL translates speech and text into Indian Sign Language in real time. Bridging communication barriers for 68+ million deaf citizens across education, healthcare, and public transit in India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body class="is-home-page">
+<div id="nav-root"></div>
+
+<main id="main-content">
+
+<!-- ═══ FULL-BLEED COVER HERO SECTION WITH 5-SECOND INFINITE LOOP (MATCHING REFERENCE IMAGE) ═══ -->
+<section class="hero-cover" id="hero-cover">
+  <!-- Full-bleed background photo slider (edges-to-edge covering whole viewport) -->
+  <div class="hero-cover-bg-slider" id="heroCoverBgSlider">
+    <div class="hero-cover-slide active" data-index="0">
+      <img src="images/hero-1.png" alt="Indian students signing happily in classroom" class="hero-cover-img">
+    </div>
+    <div class="hero-cover-slide" data-index="1">
+      <img src="images/hero-2.jpg" alt="Passionate Indian deaf youth signing at an advocacy event" class="hero-cover-img">
+    </div>
+    <div class="hero-cover-slide" data-index="2">
+      <img src="images/hero-3.jpg" alt="Two Indian school students in uniform signing to each other" class="hero-cover-img">
+    </div>
+    <div class="hero-cover-slide" data-index="3">
+      <img src="images/hero-4.png" alt="SignISL neural sign language synthesis interface on laptop" class="hero-cover-img">
+    </div>
+  </div>
+
+  <!-- Deep contrast scrim gradient overlay for pristine white typography legibility -->
+  <div class="hero-cover-scrim"></div>
+
+  <!-- Main Hero Content Wrap -->
+  <div class="wrap hero-cover-wrap">
+    <div class="hero-cover-content">
+      <h1 class="hero-cover-heading">Everyone Deserves to Be Heard</h1>
+      <p class="hero-cover-sub">
+        Expert-guided Indian Sign Language education and real-time AI translation for citizens recovering independence: from wound care &amp; hospital clinics to classrooms, public transit, and home learning modules.
+      </p>
+      <div class="hero-cover-actions">
+        <button onclick="openFounderModal()" class="btn btn-cover-secondary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:-1px;margin-right:6px;"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+          Start Learning
+        </button>
+        <button onclick="openISLWidget()" class="btn btn-cover-secondary">
+          Watch Educational Videos
+        </button>
+      </div>
+    </div>
+
+    <!-- Bottom Dock: 4 Frosted Glass Metric Cards -->
+    <div class="hero-bottom-dock">
+      <div class="hero-metrics-grid" style="width:100%;">
+        <div class="hero-metric-card">
+          <div class="metric-val">~68 Million+</div>
+          <div class="metric-lbl">Deaf &amp; Hard-of-Hearing Citizens Across India</div>
+        </div>
+        <div class="hero-metric-card">
+          <div class="metric-val">2nd Most Common</div>
+          <div class="metric-lbl">Cause of Communication Isolation Nationwide</div>
+        </div>
+        <div class="hero-metric-card">
+          <div class="metric-val">&lt;200ms Latency</div>
+          <div class="metric-lbl">Instant Real-Time Neural ISL Translation</div>
+        </div>
+        <div class="hero-metric-card">
+          <div class="metric-val">12+ Dialects</div>
+          <div class="metric-lbl">Regional Indian Sign Vocabularies Supported</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DEDICATED ACHIEVEMENTS SHOWCASE SECTION (SCROLL DOWN) ═══ -->
+<section class="section section-achievements" id="achievements">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:32px;">
+      <span class="eyebrow">Verified Milestones</span>
+      <h2 class="h2" style="margin-bottom:12px;">Recognized by India's Leading Institutions</h2>
+      <p class="sub" style="max-width:620px;margin:0 auto;">National awards, ideathon victories, and academic commendations validating SignISL's breakthrough assistive AI.</p>
+    </div>
+
+    <div class="achievement-showcase-list">
+
+      <!-- Achievement 1: BMU Innovation Summit 1st Place -->
+      <div class="achievement-item">
+        <div class="achievement-media">
+          <div class="achievement-img-frame">
+            <img src="award-bmu.png" alt="BMU University 1st Prize ₹25,000 Award Presentation" class="achievement-full-img">
+            <div class="achievement-badge-pill">1st Place Champion 🏆</div>
+          </div>
+        </div>
+        <div class="achievement-info">
+          <div class="achievement-meta">BML Munjal University &middot; Annual Innovation Summit 2025</div>
+          <h3 class="achievement-title-claude">1st Prize Winner &middot; Innovation &amp; Social Impact</h3>
+          <div class="achievement-prize-callout">₹25,000 Innovation Award &middot; ACIC-BMU Foundation Backing</div>
+          <p class="achievement-desc">
+            Awarded First Place at the ACIC-BMU Foundation and Institute of Innovation &amp; Entrepreneurship pitch competition. Honoured by a distinguished jury of venture technologists and educators for delivering reliable, real-time Indian Sign Language synthesis.
+          </p>
+          <ul class="achievement-points">
+            <li><span>Selected as champion among North India's top university technology teams</span></li>
+            <li><span>Demonstrated real-time neural gesture accuracy, child safety, and zero cloud delay</span></li>
+            <li><span>Backed by ACIC-BMU incubation resources and direct ecosystem mentorship</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Achievement 2: IIM Mumbai Ideathon 2nd Place (Alternating Side-by-Side) -->
+      <div class="achievement-item item-reverse">
+        <div class="achievement-media">
+          <div class="achievement-img-frame">
+            <img src="award-iim-mumbai.png" alt="IIM Mumbai Ideathon 2nd Place ₹50,000 Prize Presentation" class="achievement-full-img">
+            <div class="achievement-badge-pill">National Runner-Up 🥈</div>
+          </div>
+        </div>
+        <div class="achievement-info">
+          <div class="achievement-meta">IIM Mumbai Ideathon 2025 &middot; 200+ Teams Nationwide</div>
+          <h3 class="achievement-title-claude">2nd Place Nationwide at IIM Mumbai</h3>
+          <div class="achievement-prize-callout">₹50,000 Cash Prize &middot; 200+ Competitor Teams</div>
+          <p class="achievement-desc">
+            Secured 2nd Place nationwide in an intensive evaluation against over 200 leading engineering and social enterprise teams from all across India. Commended by academic deans and enterprise leaders for solving critical public accessibility challenges.
+          </p>
+          <ul class="achievement-points">
+            <li><span>Live sub-200ms speech-to-ISL latency verified on stage during final pitch</span></li>
+            <li><span>Engineered to meet statutory compliance under the RPWD Act 2016</span></li>
+            <li><span>Achieved top national benchmark score in societal impact and feasibility</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Achievement 3: Certificate of Excellence -->
+      <div class="achievement-item">
+        <div class="achievement-media">
+          <div class="achievement-img-frame">
+            <img src="award-certificate.png" alt="Certificate of Excellence from Academic Faculty Leadership" class="achievement-full-img">
+            <div class="achievement-badge-pill">Academic Distinction 📜</div>
+          </div>
+        </div>
+        <div class="achievement-info">
+          <div class="achievement-meta">Department of Computer Science &amp; Academic Board &middot; 2025</div>
+          <h3 class="achievement-title-claude">Certificate of Academic Excellence</h3>
+          <div class="achievement-prize-callout">Commended by University Faculty &amp; Academic Board</div>
+          <p class="achievement-desc">
+            Officially presented with a Certificate of Excellence by Prof. Nandita Choudhury, Dr. Megha Shree, and Prof. Akriti Chandra for original engineering research and assistive application in Indian Sign Language translation.
+          </p>
+          <ul class="achievement-points">
+            <li><span>Comprehensive academic validation against standard Indian Sign Language corpora</span></li>
+            <li><span>High-precision temporal smoothing algorithm preventing gesture flicker</span></li>
+            <li><span>Recognized for adherence to WCAG 2.2 AA and strict user privacy safeguards</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ INTERACTIVE AI ISL AVATAR STUDIO (EMBEDDED LIVE APP) ═══ -->
+<section class="section section-dark" id="live-isl-studio" style="padding:74px 0;background:linear-gradient(180deg, #07090E 0%, #0D111A 50%, #07090E 100%);position:relative;overflow:hidden;border-bottom:1px solid rgba(255,255,255,0.06);">
+  <!-- Ambient background lighting -->
+  <div style="position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:780px;height:400px;background:radial-gradient(circle, rgba(91,79,207,0.2) 0%, rgba(91,79,207,0) 70%);pointer-events:none;z-index:0;"></div>
+  
+  <div class="wrap" style="position:relative;z-index:1;max-width:1160px;margin:0 auto;padding:0 24px;">
+    <div style="text-align:center;margin-bottom:34px;">
+      <span class="badge" style="background:rgba(91,79,207,0.18);border:1px solid rgba(139,92,246,0.38);color:#A5B4FC;border-radius:999px;padding:6px 18px;font-size:11.5px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:14px;display:inline-flex;align-items:center;gap:7px;">
+        <span style="width:7px;height:7px;border-radius:50%;background:#10B981;box-shadow:0 0 10px #10B981;display:inline-block;"></span>
+        Interactive Live Avatar Studio
+      </span>
+      <h2 class="h2 white" style="margin-bottom:14px;font-size:clamp(26px, 3.4vw, 38px);letter-spacing:-0.02em;">
+        AI-Powered Indian Sign Language Generator
+      </h2>
+      <p class="sub" style="color:rgba(255,255,255,0.74);max-width:680px;margin:0 auto;font-size:15.5px;line-height:1.6;">
+        Experience our real-time text and speech-to-sign avatar in action below. Type any word or sentence, or use your microphone to watch instant 3D sign translation directly on our platform.
+      </p>
+    </div>
+
+    <!-- Big Rectangle Interactive Container -->
+    <div class="isl-embed-container" style="background:#0F131D;border:1px solid rgba(255,255,255,0.14);border-radius:18px;overflow:hidden;box-shadow:0 24px 64px -12px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.06);">
+      
+      <!-- Studio Header Bar -->
+      <div style="background:linear-gradient(90deg, #131825 0%, #171E2E 100%);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,0.08);flex-wrap:wrap;gap:12px;">
+        
+        <!-- Window Controls & Title -->
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div style="display:flex;gap:7px;align-items:center;">
+            <span style="width:11px;height:11px;border-radius:50%;background:#EF4444;display:inline-block;opacity:0.85;"></span>
+            <span style="width:11px;height:11px;border-radius:50%;background:#F59E0B;display:inline-block;opacity:0.85;"></span>
+            <span style="width:11px;height:11px;border-radius:50%;background:#10B981;display:inline-block;opacity:0.85;"></span>
+          </div>
+          <div style="height:16px;width:1px;background:rgba(255,255,255,0.12);"></div>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#A5B4FC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><path d="M12 6v6l4 2"/></svg>
+            <span style="font-family:var(--font-mono, monospace);font-size:12.5px;color:rgba(255,255,255,0.85);font-weight:500;letter-spacing:0.02em;">
+              SignISL Interactive Console · Sub-200ms Neural Pipeline
+            </span>
+          </div>
+        </div>
+
+        <!-- Right Controls -->
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span style="display:inline-flex;align-items:center;gap:6px;font-size:11.5px;color:#34D399;background:rgba(16,185,129,0.12);padding:4px 10px;border-radius:999px;font-weight:600;border:1px solid rgba(16,185,129,0.25);">
+            <span style="width:6px;height:6px;border-radius:50%;background:#34D399;box-shadow:0 0 6px #34D399;"></span>
+            Live Ready
+          </span>
+          <button type="button" onclick="document.getElementById('islLiveIframe').src = 'https://isl2.davuniversity.org/';" title="Reset Console" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.75);border-radius:6px;padding:5px 11px;font-size:12px;cursor:pointer;display:inline-flex;align-items:center;gap:5px;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+            Reset
+          </button>
+          <button type="button" onclick="toggleIframeFullscreen()" title="Fullscreen" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.75);border-radius:6px;padding:5px 11px;font-size:12px;cursor:pointer;display:inline-flex;align-items:center;gap:5px;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+            Fullscreen
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Live Web Feature Stage (Iframe) -->
+      <div id="islIframeWrapper" style="position:relative;width:100%;height:720px;background:#faf9f6;">
+        <iframe 
+          id="islLiveIframe" 
+          src="https://isl2.davuniversity.org/" 
+          title="SignISL Live Indian Sign Language Generator"
+          allow="microphone *; camera *; autoplay *; display-capture *; clipboard-write *; fullscreen *"
+          style="width:100%;height:100%;border:none;display:block;background:#faf9f6;">
+        </iframe>
+      </div>
+
+      <!-- Quick Hint Bar -->
+      <div style="background:#111522;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(255,255,255,0.07);font-size:12.5px;color:rgba(255,255,255,0.65);flex-wrap:wrap;gap:8px;">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span style="color:#FBBF24;">⚡</span>
+          <span><strong>Interactive Instructions:</strong> Type words/sentences in the input box (e.g. <em>"night"</em>, <em>"welcome"</em>, <em>"emergency"</em>) and click <strong>Generate</strong>, or click the mic button to speak.</span>
+        </div>
+        <div style="font-family:var(--font-mono, monospace);font-size:11.5px;color:rgba(255,255,255,0.45);">
+          Integrated SignISL Neural Engine
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FIELD SESSION WITH THE DEAF COMMUNITY (INFINITE MOVING SLIDER) ═══ -->
+<section class="section-session" id="community-session">
+  <div class="wrap" style="text-align:center;margin-bottom:44px;">
+    <span class="badge" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.22);color:#FFFFFF;border-radius:4px;padding:6px 14px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:14px;display:inline-block;">Real-World Field Validation</span>
+    <h2 class="h2 white" style="margin-bottom:12px;">Field Sessions with the Deaf Community</h2>
+    <p class="sub" style="color:rgba(255,255,255,0.75);max-width:620px;margin:0 auto;">
+      Hands-on co-design and live validation sessions with deaf students, educators, and community advocates — refining real-time gesture comprehension and cultural authenticity.
+    </p>
+  </div>
+
+  <div class="session-slider-container">
+    <div class="session-slider-track" id="sessionTrack">
+      <!-- Original Set -->
+      <div class="session-card">
+        <img src="session/i1.jpeg" alt="Deaf community field session interaction" class="session-media" loading="lazy">
+        <div class="session-card-scrim"></div>
+        <div class="session-card-info">
+          <div class="session-card-title">Classroom Signing Workshop</div>
+          <div class="session-card-desc">Interactive session testing student engagement and comprehension with real-time feedback.</div>
+        </div>
+      </div>
+
+      <div class="session-card session-card-wide">
+        <video class="session-media session-loop-vid" src="session/sessionv1.mp4" playsinline muted autoplay loop preload="auto">
+          <source src="session/sessionv1.mp4" type="video/mp4">
+        </video>
+        <div class="session-card-scrim"></div>
+        <div class="session-card-info">
+          <div class="session-card-title">Real-Time Sign Synthesis Demo</div>
+          <div class="session-card-desc">Live demonstration of spoken sentence translation tested directly in the field.</div>
+        </div>
+      </div>
+
+      <div class="session-card">
+        <video class="session-media session-loop-vid" src="session/sessionv2.mp4" playsinline muted autoplay loop preload="auto">
+          <source src="session/sessionv2.mp4" type="video/mp4">
+        </video>
+        <div class="session-card-scrim"></div>
+        <div class="session-card-info">
+          <div class="session-card-title">Student Gesture Evaluation</div>
+          <div class="session-card-desc">Deaf youth verifying vocabulary transitions, spatial grammar, and ease of learning.</div>
+        </div>
+      </div>
+
+      <div class="session-card">
+        <img src="session/i2.jpeg" alt="Deaf community collaborative learning moment" class="session-media" loading="lazy">
+        <div class="session-card-scrim"></div>
+        <div class="session-card-info">
+          <div class="session-card-title">Collaborative Learning Group</div>
+          <div class="session-card-desc">Community members sharing personal communication hurdles and digital priorities.</div>
+        </div>
+      </div>
+
+      <div class="session-card">
+        <video class="session-media session-loop-vid" src="session/sessionv3.mp4" playsinline muted autoplay loop preload="auto">
+          <source src="session/sessionv3.mp4" type="video/mp4">
+        </video>
+        <div class="session-card-scrim"></div>
+        <div class="session-card-info">
+          <div class="session-card-title">Live Feedback &amp; Verification</div>
+          <div class="session-card-desc">Gathering real-time feedback from educators on facial expression accuracy.</div>
+        </div>
+      </div>
+
+      <div class="session-card">
+        <video class="session-media session-loop-vid" src="session/sessionv4.mp4" playsinline muted autoplay loop preload="auto">
+          <source src="session/sessionv4.mp4" type="video/mp4">
+        </video>
+        <div class="session-card-scrim"></div>
+        <div class="session-card-info">
+          <div class="session-card-title">Community Immersion &amp; Dialogue</div>
+          <div class="session-card-desc">Deep cultural exchange ensuring Indian Sign Language dignity and precision.</div>
+        </div>
+      </div>
+
+      <!-- Duplicate Set for Seamless Infinite Scrolling -->
+      <div class="session-card" aria-hidden="true">
+        <img src="session/i1.jpeg" alt="Deaf community field session interaction" class="session-media" loading="lazy">
+        <div class="session-card-scrim"></div>
+        <div class="session-card-info">
+          <div class="session-card-title">Classroom Signing Workshop</div>
+          <div class="session-card-desc">Interactive session testing student engagement and comprehension with real-time feedback.</div>
+        </div>
+      </div>
+
+      <div class="session-card session-card-wide" aria-hidden="true">
+        <video class="session-media session-loop-vid" src="session/sessionv1.mp4" playsinline muted autoplay loop preload="auto">
+          <source src="session/sessionv1.mp4" type="video/mp4">
+        </video>
+        <div class="session-card-scrim"></div>
+        <div class="session-card-info">
+          <div class="session-card-title">Real-Time Sign Synthesis Demo</div>
+          <div class="session-card-desc">Live demonstration of spoken sentence translation tested directly in the field.</div>
+        </div>
+      </div>
+
+      <div class="session-card" aria-hidden="true">
+        <video class="session-media session-loop-vid" src="session/sessionv2.mp4" playsinline muted autoplay loop preload="auto">
+          <source src="session/sessionv2.mp4" type="video/mp4">
+        </video>
+        <div class="session-card-scrim"></div>
+        <div class="session-card-info">
+          <div class="session-card-title">Student Gesture Evaluation</div>
+          <div class="session-card-desc">Deaf youth verifying vocabulary transitions, spatial grammar, and ease of learning.</div>
+        </div>
+      </div>
+
+      <div class="session-card" aria-hidden="true">
+        <img src="session/i2.jpeg" alt="Deaf community collaborative learning moment" class="session-media" loading="lazy">
+        <div class="session-card-scrim"></div>
+        <div class="session-card-info">
+          <div class="session-card-title">Collaborative Learning Group</div>
+          <div class="session-card-desc">Community members sharing personal communication hurdles and digital priorities.</div>
+        </div>
+      </div>
+
+      <div class="session-card" aria-hidden="true">
+        <video class="session-media session-loop-vid" src="session/sessionv3.mp4" playsinline muted autoplay loop preload="auto">
+          <source src="session/sessionv3.mp4" type="video/mp4">
+        </video>
+        <div class="session-card-scrim"></div>
+        <div class="session-card-info">
+          <div class="session-card-title">Live Feedback &amp; Verification</div>
+          <div class="session-card-desc">Gathering real-time feedback from educators on facial expression accuracy.</div>
+        </div>
+      </div>
+
+      <div class="session-card" aria-hidden="true">
+        <video class="session-media session-loop-vid" src="session/sessionv4.mp4" playsinline muted autoplay loop preload="auto">
+          <source src="session/sessionv4.mp4" type="video/mp4">
+        </video>
+        <div class="session-card-scrim"></div>
+        <div class="session-card-info">
+          <div class="session-card-title">Community Immersion &amp; Dialogue</div>
+          <div class="session-card-desc">Deep cultural exchange ensuring Indian Sign Language dignity and precision.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROFESSIONAL FRAMED DEMONSTRATION VIDEOS ═══ -->
+<section class="section section-dark" id="demos">
+  <div class="wrap">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-bottom:44px;">
+      <div>
+        <span class="eyebrow">Product Verification</span>
+        <h2 class="h2 white" style="margin-bottom:8px;">See SignISL in Real Time</h2>
+        <p class="sub" style="color:rgba(255,255,255,0.7);max-width:520px;">Uncut footage demonstrating our AI avatar translating speech and text with sub-200ms latency on production devices.</p>
+      </div>
+      <button onclick="openVideoDemo()" class="btn btn-dark-outline" style="border-radius:4px;height:44px;gap:8px;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Watch Full Screen Demos
+      </button>
+    </div>
+
+    <!-- Video Grid with Proper Hardware Studio Frames -->
+    <div class="grid-2" style="gap:32px;align-items:start;">
+
+      <!-- Video 1: Studio Display Monitor Hardware Frame -->
+      <div class="hardware-frame">
+        <div class="frame-top-bar">
+          <div class="frame-window-dots">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+          <div class="frame-title">SignISL Neural Avatar v2.4 &middot; Real-Time Pipeline</div>
+          <div class="frame-status"><span class="pulse-led"></span>60 FPS &middot; &lt;200ms</div>
+        </div>
+        <div class="frame-screen">
+          <video id="v1-main" poster="video-demo-1.jpg" playsinline muted loop autoplay controls>
+            <source src="video-demo-1.mp4" type="video/mp4">
+            <track kind="captions" srclang="en" label="English" default src="video-demo-1.vtt">
+          </video>
+        </div>
+        <div class="frame-footer">
+          <h3 class="frame-heading-claude">Speech-to-ISL Gesture Synthesis</h3>
+          <p class="frame-desc">Spoken words converted into fluent, natural Indian Sign Language movements in real time for classrooms and public announcements.</p>
+        </div>
+      </div>
+
+      <!-- Video 2: Kiosk / Mobile Display Hardware Frame -->
+      <div class="hardware-frame">
+        <div class="frame-top-bar">
+          <div class="frame-window-dots">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+          <div class="frame-title">SignISL Web Widget &middot; Client Side Integration</div>
+          <div class="frame-status"><span class="pulse-led"></span>One-Line Embed</div>
+        </div>
+        <div class="frame-screen">
+          <video id="v2-main" poster="video-demo-2.jpg" playsinline muted loop autoplay controls>
+            <source src="video-demo-2.mp4" type="video/mp4">
+            <track kind="captions" srclang="en" label="English" default src="video-demo-2.vtt">
+          </video>
+        </div>
+        <div class="frame-footer">
+          <h3 class="frame-heading-claude">Embeddable Website Accessibility Widget</h3>
+          <p class="frame-desc">One script tag embeds interactive ISL accessibility directly into any existing portal, web app, or government terminal.</p>
+        </div>
+      </div>
+
+      <!-- Video 3: Real-Time Mobile Avatar Synthesis -->
+      <div class="hardware-frame">
+        <div class="frame-top-bar">
+          <div class="frame-window-dots">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+          <div class="frame-title">SignISL Mobile Synthesis &middot; Live Gesture Capture</div>
+          <div class="frame-status"><span class="pulse-led"></span>Continuous Stream</div>
+        </div>
+        <div class="frame-screen">
+          <video id="v3-main" playsinline muted loop autoplay controls preload="auto" style="object-fit:contain;background:#000;">
+            <source src="videos/samplev1 (1).mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="frame-footer">
+          <h3 class="frame-heading-claude">Real-Time Mobile Avatar Synthesis</h3>
+          <p class="frame-desc">High-precision sign generation rendered dynamically on mobile hardware, verifying fluid finger-spelling and grammatical motion.</p>
+        </div>
+      </div>
+
+      <!-- Video 4: Sentence Translation Verification -->
+      <div class="hardware-frame">
+        <div class="frame-top-bar">
+          <div class="frame-window-dots">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+          <div class="frame-title">SignISL Natural Dialogue &middot; Field Verification</div>
+          <div class="frame-status"><span class="pulse-led"></span>&lt;200ms Latency</div>
+        </div>
+        <div class="frame-screen">
+          <video id="v4-main" playsinline muted loop autoplay controls preload="auto" style="object-fit:contain;background:#000;">
+            <source src="videos/samplev1 (2).mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="frame-footer">
+          <h3 class="frame-heading-claude">Conversational ISL Synthesis Demonstration</h3>
+          <p class="frame-desc">Comprehensive sentence translation showing natural spatial grammar, non-manual cues, and low-latency response directly on device.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ REAL-WORLD DEPLOYMENT SHOWCASE ═══ -->
+<section class="section section-white">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Real-World Deployment</span>
+      <h2 class="h2" style="margin-bottom:12px;">Making Public Infrastructure Accessible</h2>
+      <p class="sub" style="max-width:580px;margin:0 auto;">From railway platforms to airport gates, SignISL bridges communication gaps for deaf commuters across India.</p>
+    </div>
+    <div class="grid-3">
+
+      <!-- Railway Station -->
+      <div class="deploy-card">
+        <div class="deploy-photo">
+          <img src="deploy-railway.png" alt="SignISL at Indian Railway Station - Rajdhani Express delay announcement in ISL">
+          <span class="deploy-badge">Indian Railways</span>
+        </div>
+        <div class="deploy-label">
+          <h4>Railway Platform Displays</h4>
+          <p>Real-time train departure delays and platform change announcements rendered in clear Indian Sign Language.</p>
+        </div>
+      </div>
+
+      <!-- Metro Station -->
+      <div class="deploy-card">
+        <div class="deploy-photo">
+          <img src="deploy-metro.png" alt="SignISL AI-Powered ISL Translation at Metro Station">
+          <span class="deploy-badge">Metro Transit</span>
+        </div>
+        <div class="deploy-label">
+          <h4>Metro Station Concourse Screens</h4>
+          <p>Instant visual translation for transit route adjustments, emergency alerts, and gate directions.</p>
+        </div>
+      </div>
+
+      <!-- Airport -->
+      <div class="deploy-card">
+        <div class="deploy-photo">
+          <img src="deploy-airport.png" alt="SignISL at Airport Departure Gate B7 - Flight AI 302 gate change in ISL">
+          <span class="deploy-badge">Indian Airports</span>
+        </div>
+        <div class="deploy-label">
+          <h4>Airport Departure Gates</h4>
+          <p>Gate changes, boarding calls, and security notifications translated immediately for every deaf passenger.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ RPWD ACT & GOVERNMENT COMPLIANCE ═══ -->
+<section class="section section-bg">
+  <div class="wrap">
+    <div style="max-width:820px;margin:0 auto 48px;text-align:center;">
+      <span class="eyebrow">Legal &amp; Policy Alignment</span>
+      <h2 class="h2" style="margin-bottom:14px;">Compliant with the RPWD Act 2016</h2>
+      <p class="sub" style="line-height:1.75;">SignISL helps ministries, municipal departments, and public services fulfill their statutory obligations under India's Rights of Persons with Disabilities Act 2016, ensuring equal digital access for 68 million deaf citizens.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card" style="padding:32px;">
+        <h3 class="h3" style="margin-bottom:10px;">Statutory Mandate</h3>
+        <p style="font-size:14px;color:var(--mu);line-height:1.7;">Directly satisfies government guidelines for accessible communications in public offices, education, and digital portals.</p>
+      </div>
+      <div class="card" style="padding:32px;">
+        <h3 class="h3" style="margin-bottom:10px;">Citizen Service Kiosks</h3>
+        <p style="font-size:14px;color:var(--mu);line-height:1.7;">Ready for rapid deployment at Aadhaar enrollment counters, passport seva kendras, and municipal helpdesks.</p>
+      </div>
+      <div class="card" style="padding:32px;">
+        <h3 class="h3" style="margin-bottom:10px;">Sovereign &amp; Secure</h3>
+        <p style="font-size:14px;color:var(--mu);line-height:1.7;">All data processing complies with Indian data sovereignty principles. Zero retention of private voice or personal identifiers.</p>
+      </div>
+    </div>
+    <div class="flex-row flex-center" style="margin-top:40px;gap:16px;">
+      <a href="government.html" class="btn btn-v">Explore Government Solutions →</a>
+      <button onclick="openFounderModal()" class="btn btn-w">Schedule a Ministry Briefing</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SOLUTIONS OVERVIEW ═══ -->
+<section class="section section-white">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Specialized Platforms</span>
+      <h2 class="h2" style="margin-bottom:12px;">Engineered for Every Setting</h2>
+      <p class="sub" style="max-width:540px;margin:0 auto;">Dedicated modes customized for unique communication environments across India.</p>
+    </div>
+    <div class="grid-3">
+      <a href="classroom.html" class="card sol-card">
+        <div class="sol-img"><svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#060C1E"/><rect x="40" y="30" width="220" height="130" rx="4" fill="#0B152F" stroke="#162752" stroke-width="1.5"/><rect x="42" y="32" width="216" height="126" rx="3" fill="#FFFFFF" opacity=".05"/><text x="152" y="80" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="9" font-family="sans-serif">CLASSROOM LESSON</text><circle cx="100" cy="85" r="14" fill="#FFFFFF" opacity=".2"/><rect x="90" y="100" width="20" height="25" rx="4" fill="#FFFFFF" opacity=".3"/><rect x="280" y="60" width="70" height="100" rx="4" fill="#0B152F" stroke="#162752" stroke-width="1.5"/><circle cx="315" cy="100" r="16" fill="#FFFFFF" opacity=".85"/><rect x="304" y="117" width="22" height="28" rx="4" fill="#FFFFFF" opacity=".6"/></svg></div>
+        <div class="sol-body">
+          <h3>Schools &amp; Classrooms</h3>
+          <p>Live translation of lectures so deaf students see their teacher's words signed instantly in real time.</p>
+          <span>Explore Classroom Mode →</span>
+        </div>
+      </a>
+
+      <a href="hospital.html" class="card sol-card">
+        <div class="sol-img"><svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#060C1E"/><rect x="60" y="110" width="280" height="12" rx="4" fill="#0B152F"/><circle cx="120" cy="88" r="16" fill="#162752"/><rect x="107" y="105" width="26" height="42" rx="4" fill="#162752"/><rect x="170" y="82" width="60" height="80" rx="4" fill="#0B152F" stroke="#162752" stroke-width="1.5"/><circle cx="200" cy="115" r="16" fill="#FFFFFF" opacity=".85"/><rect x="189" y="132" width="22" height="24" rx="4" fill="#FFFFFF" opacity=".6"/><rect x="197" y="68" width="6" height="14" rx="2" fill="#FFFFFF" opacity=".8"/><rect x="193" y="72" width="14" height="6" rx="2" fill="#FFFFFF" opacity=".8"/></svg></div>
+        <div class="sol-body">
+          <h3>Hospitals &amp; Clinics</h3>
+          <p>Allows deaf patients to explain medical symptoms and understand physician diagnoses independently.</p>
+          <span>Explore Healthcare Mode →</span>
+        </div>
+      </a>
+
+      <a href="government.html" class="card sol-card">
+        <div class="sol-img"><svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#060C1E"/><rect x="50" y="100" width="300" height="80" rx="4" fill="#0B152F"/><rect x="200" y="55" width="55" height="80" rx="4" fill="#060C1E" stroke="#162752" stroke-width="1.5"/><circle cx="228" cy="87" r="13" fill="#FFFFFF" opacity=".85"/><rect x="218" y="101" width="20" height="24" rx="4" fill="#FFFFFF" opacity=".6"/><circle cx="300" cy="84" r="14" fill="#162752"/><rect x="288" y="99" width="24" height="32" rx="4" fill="#162752"/></svg></div>
+        <div class="sol-body">
+          <h3>Government Kiosks</h3>
+          <p>Equips civic service centers with digital ISL interpreters for citizen welfare and identity paperwork.</p>
+          <span>Explore Civic Mode →</span>
+        </div>
+      </a>
+
+      <a href="home-family.html" class="card sol-card">
+        <div class="sol-img"><svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#060C1E"/><rect x="100" y="40" width="200" height="125" rx="6" fill="#0B152F" stroke="#162752" stroke-width="1.5"/><circle cx="200" cy="95" r="26" fill="#FFFFFF" opacity=".88"/><rect x="183" y="122" width="34" height="38" rx="4" fill="#FFFFFF" opacity=".6"/></svg></div>
+        <div class="sol-body">
+          <h3>Home &amp; Family</h3>
+          <p>Parents and siblings learn Indian Sign Language naturally alongside their child with family learning modes.</p>
+          <span>Explore Family Mode →</span>
+        </div>
+      </a>
+
+      <a href="events.html" class="card sol-card">
+        <div class="sol-img"><svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#060C1E"/><rect x="50" y="110" width="300" height="70" fill="#0B152F"/><rect x="270" y="25" width="110" height="90" rx="4" fill="#060C1E" stroke="#162752" stroke-width="1.5"/><circle cx="325" cy="62" r="18" fill="#FFFFFF" opacity=".88"/><rect x="312" y="81" width="26" height="32" rx="4" fill="#FFFFFF" opacity=".6"/></svg></div>
+        <div class="sol-body">
+          <h3>Public Conferences</h3>
+          <p>Live projected ISL avatar overlay for auditoriums, government summits, and televised broadcasts.</p>
+          <span>Explore Events Mode →</span>
+        </div>
+      </a>
+
+      <a href="widget.html" class="card sol-card">
+        <div class="sol-img"><svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#060C1E"/><rect x="40" y="20" width="320" height="160" rx="6" fill="#0B152F" stroke="#162752" stroke-width="1.5"/><rect x="60" y="72" width="180" height="8" rx="2" fill="#FFFFFF" opacity=".2"/><rect x="60" y="86" width="140" height="6" rx="2" fill="#FFFFFF" opacity=".15"/><circle cx="328" cy="148" r="18" fill="#FFFFFF" opacity=".85"/></svg></div>
+        <div class="sol-body">
+          <h3>Website Widget</h3>
+          <p>One-line drop-in code snippet that makes any website fully accessible in Indian Sign Language.</p>
+          <span>Explore Widget Integration →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section class="section section-white">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Real Impact</span>
+      <h2 class="h2" style="margin-bottom:12px;">Voices That Guide Our Mission</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card" style="padding:32px;">
+        <p class="testimonial-quote">"SignISL transformed how I communicate with my daughter. For the first time in our lives, she could understand every thought I wished to share with complete clarity."</p>
+        <div class="testimonial-author">Priya Sharma</div>
+        <div class="testimonial-role">Parent &middot; Mumbai</div>
+      </div>
+      <div class="card" style="padding:32px;">
+        <p class="testimonial-quote">"My deaf students are finally deeply engaged in every lecture. SignISL represents the assistive classroom technology I have awaited for over a decade."</p>
+        <div class="testimonial-author">Rahul Mehta</div>
+        <div class="testimonial-role">Special Educator &middot; Delhi</div>
+      </div>
+      <div class="card" style="padding:32px;">
+        <p class="testimonial-quote">"The sub-200ms real-time translation is extraordinary. We integrated it onto clinic intake displays with zero disruption and immense patient gratitude."</p>
+        <div class="testimonial-author">Dr. Ananya Rao</div>
+        <div class="testimonial-role">Pediatrician &middot; Bangalore</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FINAL CALL TO ACTION ═══ -->
+<section class="section section-dark" style="text-align:center;">
+  <div class="wrap">
+    <span class="eyebrow">Join The Movement</span>
+    <h2 class="h2 white" style="font-size:clamp(32px,4.5vw,54px);margin-bottom:18px;">Everyone Deserves to Be Seen and Heard</h2>
+    <p class="sub" style="color:rgba(255,255,255,0.7);max-width:520px;margin:0 auto 36px;">Partner with SignISL to bring real-time Indian Sign Language accessibility to your institution, school, or organization.</p>
+    <div class="flex-row flex-center" style="gap:16px;">
+      <button onclick="openFounderModal()" class="btn btn-dark" style="height:52px;font-size:15px;border-radius:4px;">Contact Our Founders →</button>
+      <a href="demo.html" class="btn btn-dark-outline" style="height:52px;font-size:15px;border-radius:4px;">Try the Live Converter</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div id="footer-root"></div>
+
+<!-- ═══ 5-SECOND INFINITE HERO COVER SLIDER LOGIC (MATCHING REFERENCE) ═══ -->
+<script>
+(function() {
+  const slides = document.querySelectorAll('.hero-cover-slide');
+  const dots   = document.querySelectorAll('.hero-pag-dot');
+  const fills  = [
+    document.getElementById('cover-pfill-0'),
+    document.getElementById('cover-pfill-1'),
+    document.getElementById('cover-pfill-2'),
+    document.getElementById('cover-pfill-3')
+  ];
+  if (!slides.length) return;
+
+  const SLIDE_DURATION = 5000; // 5 seconds per slide
+  const TICK_INTERVAL = 50;   // 50ms smooth ticker updates
+  let currentIdx = 0;
+  let elapsed = 0;
+  let isPaused = false;
+  let tickerTimer = null;
+
+  function setActiveSlide(newIdx) {
+    slides[currentIdx].classList.remove('active');
+    if (dots[currentIdx]) dots[currentIdx].classList.remove('active');
+    currentIdx = (newIdx + slides.length) % slides.length;
+    slides[currentIdx].classList.add('active');
+    if (dots[currentIdx]) dots[currentIdx].classList.add('active');
+    elapsed = 0;
+    updateProgressBars();
+  }
+
+  function updateProgressBars() {
+    fills.forEach((fill, i) => {
+      if (!fill) return;
+      if (i < currentIdx) {
+        fill.style.width = '100%';
+      } else if (i === currentIdx) {
+        const pct = Math.min(100, (elapsed / SLIDE_DURATION) * 100);
+        fill.style.width = pct + '%';
+      } else {
+        fill.style.width = '0%';
+      }
+    });
+  }
+
+  function tick() {
+    if (!isPaused) {
+      elapsed += TICK_INTERVAL;
+      if (elapsed >= SLIDE_DURATION) {
+        setActiveSlide(currentIdx + 1); // Infinite loop transition
+      } else {
+        updateProgressBars();
+      }
+    }
+  }
+
+  window.heroCoverGoTo = function(n) {
+    setActiveSlide(n);
+  };
+
+  window.heroCoverStep = function(step) {
+    setActiveSlide(currentIdx + step);
+  };
+
+  // Pause on hover over pagination or buttons, resume on leave
+  const dock = document.getElementById('heroPagination');
+  if (dock) {
+    dock.addEventListener('mouseenter', function() { isPaused = true; });
+    dock.addEventListener('mouseleave', function() { isPaused = false; });
+  }
+
+  // Start ticker
+  tickerTimer = setInterval(tick, TICK_INTERVAL);
+  updateProgressBars();
+})();
+
+// Enforce 30s playback limit and ensure autoplay on community session videos
+(function() {
+  function initSessionVideos() {
+    document.querySelectorAll('.session-loop-vid').forEach(function(vid) {
+      vid.muted = true;
+      vid.playsInline = true;
+      vid.play().catch(function() {});
+      vid.addEventListener('timeupdate', function() {
+        if (vid.currentTime >= 30) {
+          vid.currentTime = 0;
+          vid.play().catch(function() {});
+        }
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSessionVideos);
+  } else {
+    initSessionVideos();
+  }
+
+  ['click', 'touchstart', 'scroll', 'mousemove'].forEach(function(evt) {
+    window.addEventListener(evt, function() {
+      document.querySelectorAll('.session-loop-vid').forEach(function(vid) {
+        if (vid.paused) {
+          vid.muted = true;
+          vid.play().catch(function() {});
+        }
+      });
+    }, { once: true, passive: true });
+  });
+})();
+
+// Fullscreen toggle for Live ISL Studio
+function toggleIframeFullscreen() {
+  const elem = document.getElementById('islIframeWrapper');
+  if (!elem) return;
+  if (!document.fullscreenElement) {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen().catch(function() {});
+    } else if (elem.webkitRequestFullscreen) {
+      elem.webkitRequestFullscreen();
+    }
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen().catch(function() {});
+    } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
+    }
+  }
+}
+</script>
+
+<script src="shared.js"></script>
+</body>
+</html>

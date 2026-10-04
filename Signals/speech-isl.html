@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Speech to Indian Sign Language - SignISL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+<div id="nav-root"></div>
+<main>
+
+<section class="page-hero">
+  <div class="page-hero-orb" style="width:520px;height:520px;top:-140px;left:-100px;background:radial-gradient(circle,rgba(0,201,167,.18),transparent 70%);"></div>
+  <div class="wrap" style="position:relative;z-index:1;padding:60px clamp(20px,4vw,60px);">
+    <a href="solutions.html" style="font-family:var(--fb);font-size:13px;color:rgba(255,255,255,.45);text-decoration:none;margin-bottom:20px;display:block;">← All Solutions</a>
+    <span class="badge badge-t" style="margin-bottom:16px;display:block;width:fit-content;">🎙 Speech to ISL</span>
+    <h1 class="h1" style="color:#fff;margin-bottom:14px;max-width:680px;font-size:clamp(32px,5vw,52px);">Speech to Indian Sign Language</h1>
+    <p class="sub" style="color:rgba(255,255,255,.6);max-width:540px;margin-bottom:28px;line-height:1.8;">Speak naturally in any Indian language - SignISL converts your voice to Indian Sign Language in real time, with under 200ms latency and no typing required.</p>
+    <div class="flex-row" style="gap:14px;">
+      <button onclick="openFounderModal()" class="btn btn-v">Request a Demo →</button>
+      <a href="demo.html" class="btn btn-dark">Try Text to ISL</a>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section class="section section-white">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">How It Works</span>
+      <h2 class="h2" style="margin-bottom:12px;">From Voice to Sign in Under 200ms</h2>
+      <p class="sub" style="max-width:500px;margin:0 auto;">A three-stage AI pipeline converts spoken language directly to a signing ISL avatar - no intermediary or typing needed.</p>
+    </div>
+    <div class="how-row">
+      <div class="how-step">
+        <div class="ic" style="background:rgba(0,201,167,.12);margin-bottom:12px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00C9A7" stroke-width="2.5" stroke-linecap="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg></div>
+        <div class="sn">STEP 01</div>
+        <h3>Voice Input</h3>
+        <ul><li>Continuous microphone listening</li><li>12+ Indian languages detected</li><li>Noise-filtered in real time</li></ul>
+      </div>
+      <div class="conn"><div class="conn-line"><div class="conn-dot" style="background:#00C9A7;"></div></div></div>
+      <div class="how-step">
+        <div class="ic" style="background:rgba(91,79,207,.12);margin-bottom:12px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5B4FCF" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div>
+        <div class="sn">STEP 02</div>
+        <h3>AI Processing</h3>
+        <ul><li>Speech-to-text transcription</li><li>ISL gloss generation via NLP</li><li>Grammar restructured for ISL syntax</li></ul>
+      </div>
+      <div class="conn"><div class="conn-line"><div class="conn-dot" style="background:#7B6FE8;"></div></div></div>
+      <div class="how-step">
+        <div class="ic" style="background:rgba(255,184,48,.12);margin-bottom:12px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFB830" stroke-width="2.5" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+        <div class="sn">STEP 03</div>
+        <h3>ISL Avatar</h3>
+        <ul><li>Animated avatar signs in real time</li><li>Adjustable signing speed</li><li>Caption displayed simultaneously</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Live Demo -->
+<section class="section section-bg" style="padding:80px 0;">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Live Demo</span>
+      <h2 class="h2" style="margin-bottom:12px;">Speech to ISL Converter</h2>
+      <p class="sub" style="max-width:480px;margin:0 auto;">Use the ISL Converter below - type or speak your text to see it translated to Indian Sign Language instantly.</p>
+    </div>
+    <div style="background:var(--dark);border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.07);max-width:1000px;margin:0 auto;box-shadow:0 24px 64px rgba(0,0,0,.25);">
+      <div style="padding:16px 24px;border-bottom:1px solid rgba(255,255,255,.08);display:flex;align-items:center;gap:10px;">
+        <div style="width:9px;height:9px;border-radius:50%;background:#00C9A7;position:relative;"><div style="position:absolute;inset:-4px;border-radius:50%;background:#00C9A7;animation:pulse 1.6s ease-out infinite;opacity:.4;"></div></div>
+        <span style="font-family:var(--fn);font-size:14px;font-weight:700;color:#fff;">Speech to ISL Converter</span>
+        <a href="https://isl.davuniversity.org" target="_blank" rel="noopener" class="btn btn-dark btn-sm" style="margin-left:auto;text-decoration:none;font-size:12px;">Open in New Tab →</a>
+      </div>
+      <div style="position:relative;height:600px;background:#0A0A18;">
+        <div id="s-loading" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;z-index:2;background:#0A0A18;">
+          <div style="display:flex;gap:7px;"><div style="width:9px;height:9px;border-radius:50%;background:#00C9A7;animation:bounce 1.2s infinite;"></div><div style="width:9px;height:9px;border-radius:50%;background:#00C9A7;animation:bounce 1.2s infinite .2s;"></div><div style="width:9px;height:9px;border-radius:50%;background:#00C9A7;animation:bounce 1.2s infinite .4s;"></div></div>
+          <div style="font-family:var(--fb);font-size:13px;color:rgba(255,255,255,.45);">Loading ISL Converter…</div>
+        </div>
+        <iframe src="https://isl.davuniversity.org" style="width:100%;height:100%;border:none;position:relative;z-index:1;" title="Speech to ISL - SignISL" sandbox="allow-scripts allow-same-origin allow-forms allow-popups" onload="speechIframeLoaded(this)" onerror="speechIframeFallback()"></iframe>
+        <!-- Fallback (shown if iframe is blocked) -->
+        <div id="s-fallback" style="display:none;position:absolute;inset:0;background:#0A0A18;flex-direction:column;align-items:center;justify-content:center;gap:20px;padding:40px;text-align:center;z-index:3;">
+          <div style="width:72px;height:72px;border-radius:50%;background:rgba(91,79,207,.18);display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#9B8FF8" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+          <div style="font-family:var(--fn);font-size:20px;font-weight:800;color:#fff;">Open ISL Converter</div>
+          <p style="font-family:var(--fb);font-size:14px;color:rgba(255,255,255,.5);line-height:1.7;max-width:360px;">Click below to open the ISL converter in a new tab.</p>
+          <a href="https://isl.davuniversity.org" target="_blank" rel="noopener" style="background:#5B4FCF;color:#fff;border-radius:999px;padding:14px 32px;font-family:var(--fn);font-size:15px;font-weight:700;text-decoration:none;">Open ISL Converter →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features + Use Cases -->
+<section class="section section-white">
+  <div class="wrap">
+    <div class="grid-2" style="gap:56px;align-items:flex-start;">
+      <div>
+        <span class="eyebrow">Features</span>
+        <h2 class="h2" style="margin-bottom:20px;">Built for Real-World Speech</h2>
+        <div>
+          <div class="feat-item"><div class="feat-check">✓</div><div><h4>12+ Indian Languages</h4><p>Hindi, Tamil, Telugu, Bengali, Kannada, Marathi, Gujarati, Punjabi, Malayalam, Odia, Urdu, and English - all supported.</p></div></div>
+          <div class="feat-item"><div class="feat-check">✓</div><div><h4>Under 200ms Latency</h4><p>Real-time processing means the ISL avatar starts signing before the speaker finishes their sentence.</p></div></div>
+          <div class="feat-item"><div class="feat-check">✓</div><div><h4>Continuous Listening</h4><p>No button-press needed between sentences - the system listens continuously for uninterrupted signing.</p></div></div>
+          <div class="feat-item"><div class="feat-check">✓</div><div><h4>Noise Cancellation</h4><p>Works in classrooms, hospital corridors, and busy public spaces - background noise filtered automatically.</p></div></div>
+          <div class="feat-item"><div class="feat-check">✓</div><div><h4>Caption Display</h4><p>Spoken words appear as captions alongside the ISL avatar - supporting both deaf and hearing users simultaneously.</p></div></div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <span class="eyebrow">Use Cases</span>
+        <div class="card" style="padding:24px;border-left:4px solid var(--teal);">
+          <div style="font-family:var(--fn);font-size:12px;font-weight:700;color:var(--teal);margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em;">Classroom</div>
+          <h4 class="h3" style="margin-bottom:6px;font-size:16px;">Teacher speaks - every deaf student understands</h4>
+          <p style="font-family:var(--fb);font-size:13px;color:var(--mu);line-height:1.65;">A tablet at the front converts the teacher's voice to ISL live, all lesson long - no interpreter required.</p>
+        </div>
+        <div class="card" style="padding:24px;border-left:4px solid var(--coral);">
+          <div style="font-family:var(--fn);font-size:12px;font-weight:700;color:var(--coral);margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em;">Hospital</div>
+          <h4 class="h3" style="margin-bottom:6px;font-size:16px;">Doctor speaks - deaf patient fully informed</h4>
+          <p style="font-family:var(--fb);font-size:13px;color:var(--mu);line-height:1.65;">Consultations, diagnoses, and instructions signed in real time - no interpreter, no delays, no miscommunication.</p>
+        </div>
+        <div class="card" style="padding:24px;border-left:4px solid var(--amber);">
+          <div style="font-family:var(--fn);font-size:12px;font-weight:700;color:var(--amber);margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em;">Public Address</div>
+          <h4 class="h3" style="margin-bottom:6px;font-size:16px;">Station announcements signed instantly</h4>
+          <p style="font-family:var(--fb);font-size:13px;color:var(--mu);line-height:1.65;">Railway stations, airports, and metro systems - live Speech to ISL for all public announcements.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section-dark" style="text-align:center;">
+  <div class="wrap">
+    <span class="badge badge-t" style="margin-bottom:20px;">Get Started</span>
+    <h2 class="h2 white" style="margin-bottom:14px;">Deploy Speech to ISL in Your Organisation</h2>
+    <p class="sub" style="color:rgba(255,255,255,.6);max-width:460px;margin:0 auto 32px;">Contact our founders for a live demonstration - we'll show you exactly how Speech to ISL works in your specific environment.</p>
+    <div class="flex-row" style="justify-content:center;gap:14px;">
+      <button onclick="openFounderModal()" class="btn btn-v" style="height:52px;">Request a Live Demo →</button>
+      <a href="live-transcription.html" class="btn btn-dark" style="height:52px;">See Live Transcription →</a>
+    </div>
+  </div>
+</section>
+
+</main>
+<div id="footer-root"></div>
+<button id="stu" onclick="scrollTop()">↑</button>
+<script src="shared.js"></script>
+<script>
+function speechIframeFallback() {
+  document.getElementById('s-loading').style.display = 'none';
+  document.getElementById('s-fallback').style.display  = 'flex';
+}
+function speechIframeLoaded(iframe) {
+  document.getElementById('s-loading').style.display = 'none';
+  try {
+    void (iframe.contentWindow && iframe.contentWindow.location.href);
+    speechIframeFallback(); /* same-origin = blocked */
+  } catch(e) { /* cross-origin SecurityError = loaded fine */ }
+}
+setTimeout(() => {
+  const l = document.getElementById('s-loading');
+  if (l && l.style.display !== 'none') speechIframeFallback();
+}, 7000);
+</script>
+</body>
+</html>

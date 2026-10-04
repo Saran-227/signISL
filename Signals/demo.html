@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Try SignISL - ISL Converter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+<div id="nav-root"></div>
+<main>
+
+<section class="page-hero">
+  <div class="page-hero-orb" style="width:500px;height:500px;top:-150px;right:-100px;background:radial-gradient(circle,rgba(91,79,207,.18),transparent 70%);"></div>
+  <div class="wrap" style="text-align:center;position:relative;z-index:1;padding:60px clamp(20px,4vw,60px);">
+    <span class="badge badge-v" style="margin-bottom:16px;">Live ISL Converter</span>
+    <h1 class="h1" style="color:#fff;margin-bottom:14px;font-size:clamp(32px,5vw,52px);">Text to Indian Sign Language</h1>
+    <p class="sub" style="color:rgba(255,255,255,.6);max-width:500px;margin:0 auto;line-height:1.8;">Type any text and see it converted to Indian Sign Language instantly - powered by SignISL AI.</p>
+  </div>
+</section>
+
+<!-- ═══ SEE IT IN ACTION - VIDEO DEMOS ═══ -->
+<section class="section section-dark" style="padding:64px 0;">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:36px;">
+      <span class="eyebrow" style="color:rgba(255,255,255,.4);">Live Product Demos</span>
+      <h2 class="h2 white" style="margin-bottom:12px;">See It In Action</h2>
+      <p class="sub" style="color:rgba(255,255,255,.55);max-width:500px;margin:0 auto;">Watch the AI translate speech and text into Indian Sign Language - live, real-time, across 12+ Indian languages.</p>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:20px;max-width:960px;margin:0 auto 32px;">
+
+      <!-- Video 1 -->
+      <div class="video-card" style="flex:1;min-width:min(100%,380px);">
+        <div style="background:#000;">
+          <video controls playsinline preload="none" style="width:100%;display:block;"><source src="video-demo-1.mp4" type="video/mp4"></video>
+        </div>
+        <div class="video-body">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+            <span class="badge badge-t" style="font-size:10px;padding:3px 10px;">Demo 1</span>
+            <span style="font-family:var(--fn);font-size:12px;font-weight:600;color:rgba(255,255,255,.45);">Live ISL Translation</span>
+          </div>
+          <h4>AI-Powered ISL Avatar</h4>
+          <p>Watch SignISL convert speech and text into Indian Sign Language in real time - the AI avatar signs every word instantly.</p>
+          <div class="video-meta">Speech · Text · 12+ Languages</div>
+        </div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="video-card" style="flex:1;min-width:min(100%,380px);">
+        <div style="background:#000;">
+          <video controls playsinline preload="none" style="width:100%;display:block;"><source src="video-demo-2.mp4" type="video/mp4"></video>
+        </div>
+        <div class="video-body">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+            <span class="badge badge-p" style="font-size:10px;padding:3px 10px;">Demo 2</span>
+            <span style="font-family:var(--fn);font-size:12px;font-weight:600;color:rgba(255,255,255,.45);">Website Widget</span>
+          </div>
+          <h4>One-Line Website Widget</h4>
+          <p>See the SignISL widget embedded live - one script tag brings full ISL accessibility to any website in under 5 minutes.</p>
+          <div class="video-meta">HTML · React · WordPress · Any platform</div>
+        </div>
+      </div>
+
+    </div>
+    <div style="text-align:center;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <button onclick="openFounderModal()" class="btn btn-v">Get Access →</button>
+      <a href="widget.html" class="btn btn-dark">Integration Guide</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ISL CONVERTER - DAV UNIVERSITY ═══ -->
+<section class="section section-bg" style="padding:80px 0;">
+  <div class="wrap">
+    <div style="background:var(--dark);border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.07);max-width:1100px;margin:0 auto;box-shadow:0 24px 64px rgba(0,0,0,.25);">
+
+      <!-- Header bar -->
+      <div style="padding:18px 28px;border-bottom:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div style="width:10px;height:10px;border-radius:50%;background:#00C9A7;position:relative;flex-shrink:0;">
+            <div style="position:absolute;inset:-4px;border-radius:50%;background:#00C9A7;animation:pulse 1.6s ease-out infinite;"></div>
+          </div>
+          <span style="font-family:var(--fn);font-size:15px;font-weight:700;color:#fff;">ISL Converter </span>
+        </div>
+        <a href="https://isl.davuniversity.org" target="_blank" rel="noopener" class="btn btn-dark btn-sm" style="text-decoration:none;">Open in New Tab →</a>
+      </div>
+
+      <!-- Iframe -->
+      <div style="position:relative;height:700px;background:#0A0A18;">
+        <!-- Loading -->
+        <div id="dav-loading" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;z-index:2;background:#0A0A18;">
+          <div style="display:flex;gap:7px;">
+            <div style="width:10px;height:10px;border-radius:50%;background:#00C9A7;animation:bounce 1.2s infinite;"></div>
+            <div style="width:10px;height:10px;border-radius:50%;background:#00C9A7;animation:bounce 1.2s infinite .2s;"></div>
+            <div style="width:10px;height:10px;border-radius:50%;background:#00C9A7;animation:bounce 1.2s infinite .4s;"></div>
+          </div>
+          <div style="font-family:var(--fb);font-size:14px;color:rgba(255,255,255,.5);">Loading ISL Converter…</div>
+        </div>
+        <iframe
+          id="dav-iframe"
+          src="https://isl.davuniversity.org"
+          style="width:100%;height:100%;border:none;position:relative;z-index:1;"
+          title="ISL Converter - SignISL"
+          sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
+          onload="davIframeLoaded()"
+          onerror="showDavFallback()"
+        ></iframe>
+        <!-- Fallback -->
+        <div id="dav-fallback" style="display:none;position:absolute;inset:0;background:#0A0A18;flex-direction:column;align-items:center;justify-content:center;gap:20px;padding:48px;text-align:center;z-index:3;">
+          <div style="width:80px;height:80px;border-radius:50%;background:rgba(91,79,207,.18);display:flex;align-items:center;justify-content:center;">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#9B8FF8" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </div>
+          <h3 style="font-family:var(--fn);font-size:22px;font-weight:800;color:#fff;margin:0;">Open ISL Converter</h3>
+          <p style="font-family:var(--fb);font-size:15px;color:rgba(255,255,255,.5);line-height:1.7;max-width:400px;">The ISL converter opens best in a dedicated browser tab for the full experience.</p>
+          <a href="https://isl.davuniversity.org" target="_blank" rel="noopener" style="background:#5B4FCF;color:#fff;border-radius:999px;padding:16px 40px;font-family:var(--fn);font-size:16px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:10px;" onmouseover="this.style.background='#4A3FBF'" onmouseout="this.style.background='#5B4FCF'">Open Full ISL Converter →</a>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ HOW IT WORKS ═══ -->
+<section class="section section-white" style="padding:100px 0;">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">How It Works</span>
+      <h2 class="h2" style="margin-bottom:40px;">Three Steps to Accessibility</h2>
+    </div>
+    <div class="how-row">
+      <div class="how-step">
+        <div class="ic" style="background:rgba(255,184,48,.12);margin-bottom:12px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFB830" stroke-width="2.5" stroke-linecap="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg></div>
+        <div class="sn">STEP 01</div>
+        <h3>Input</h3>
+        <ul><li>Type text in any language</li><li>Speak using voice input</li><li>Select a quick phrase</li></ul>
+      </div>
+      <div class="conn"><div class="conn-line"><div class="conn-dot" style="background:#FFB830;"></div></div></div>
+      <div class="how-step">
+        <div class="ic" style="background:rgba(91,79,207,.12);margin-bottom:12px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5B4FCF" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4"/></svg></div>
+        <div class="sn">STEP 02</div>
+        <h3>AI Processing</h3>
+        <ul><li>Language detection</li><li>NLP translation to ISL gloss</li><li>Avatar motion synthesis</li></ul>
+      </div>
+      <div class="conn"><div class="conn-line"><div class="conn-dot" style="background:#7B6FE8;"></div></div></div>
+      <div class="how-step">
+        <div class="ic" style="background:rgba(0,201,167,.12);margin-bottom:12px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00C9A7" stroke-width="2.5" stroke-linecap="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
+        <div class="sn">STEP 03</div>
+        <h3>ISL Output</h3>
+        <ul><li>Avatar signs in real time</li><li>Caption displayed below</li><li>Adjustable speed controls</li></ul>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:60px;padding:48px 40px;background:var(--bg);border-radius:24px;border:1px solid var(--cb);">
+      <h3 class="h3" style="margin-bottom:10px;">Ready to integrate SignISL?</h3>
+      <p class="sub" style="max-width:440px;margin:0 auto 28px;line-height:1.8;">Used by schools, hospitals, and government bodies across India. Add ISL accessibility to your organisation today.</p>
+      <div class="flex-row" style="justify-content:center;gap:14px;">
+        <button onclick="openFounderModal()" class="btn btn-v" style="height:56px;padding:0 36px;">Contact Founders →</button>
+        <a href="widget.html" class="btn btn-w" style="height:56px;padding:0 28px;">Integration Guide</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<div id="footer-root"></div>
+<button id="stu" onclick="scrollTop()">↑</button>
+<script src="shared.js"></script>
+<script>
+function showDavFallback() {
+  document.getElementById('dav-loading').style.display = 'none';
+  document.getElementById('dav-fallback').style.display = 'flex';
+}
+function davIframeLoaded() {
+  const iframe = document.getElementById('dav-iframe');
+  document.getElementById('dav-loading').style.display = 'none';
+  /* X-Frame-Options detection:
+     Cross-origin success → accessing contentWindow.location throws SecurityError.
+     Same-origin error page (blocked) → no error, we can read the location. */
+  try {
+    void (iframe.contentWindow && iframe.contentWindow.location.href);
+    /* No SecurityError → iframe was blocked → show fallback */
+    showDavFallback();
+  } catch(e) {
+    /* SecurityError → cross-origin load → iframe working fine */
+  }
+}
+/* Safety net: if neither onload nor onerror fires within 7s, show fallback */
+setTimeout(() => {
+  const l = document.getElementById('dav-loading');
+  if (l && l.style.display !== 'none') showDavFallback();
+}, 7000);
+</script>
+</body>
+</html>

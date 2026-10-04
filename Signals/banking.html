@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Banking & Finance - SignISL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+<div id="nav-root"></div>
+<main>
+
+<section class="page-hero">
+  <div class="page-hero-orb" style="width:480px;height:480px;top:-100px;left:-80px;background:radial-gradient(circle,rgba(255,184,48,.16),transparent 70%);"></div>
+  <div class="wrap" style="text-align:center;position:relative;z-index:1;padding:64px clamp(20px,4vw,60px);">
+    <span class="badge badge-a" style="margin-bottom:16px;">Banking &amp; Finance</span>
+    <h1 class="h1" style="color:#fff;margin-bottom:14px;font-size:clamp(32px,5vw,52px);">ISL Accessibility for Banking &amp; Financial Services</h1>
+    <p class="sub" style="color:rgba(255,255,255,.6);max-width:580px;margin:0 auto 32px;line-height:1.8;">Ensuring every deaf customer can access banking, insurance, and financial services independently and with complete dignity - no interpreter required.</p>
+    <button onclick="openFounderModal()" class="btn btn-v" style="height:52px;font-size:15px;">Request a Banking Demo →</button>
+  </div>
+</section>
+
+<!-- Illustration -->
+<section class="section section-white" style="padding:100px 0;">
+  <div class="wrap">
+    <div class="grid-2" style="gap:48px;align-items:center;">
+      <div>
+        <span class="eyebrow">The Problem</span>
+        <h2 class="h2" style="margin-bottom:16px;">Deaf Customers Face Real Barriers in Banking</h2>
+        <p style="font-family:var(--fb);font-size:16px;color:var(--mu);line-height:1.8;margin-bottom:16px;">India has over 68 million deaf and hard-of-hearing citizens. Most cannot independently open a bank account, apply for a loan, or complete KYC without relying on a hearing family member to interpret for them.</p>
+        <p style="font-family:var(--fb);font-size:16px;color:var(--mu);line-height:1.8;margin-bottom:24px;">SignISL eliminates this dependence. With an ISL-enabled tablet at the counter or a mobile banking app with ISL guides, every deaf customer gets the same quality of service as everyone else.</p>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <div style="display:flex;align-items:center;gap:12px;padding:14px 18px;background:var(--bg);border-radius:12px;border:1px solid var(--cb);">
+            <div style="width:10px;height:10px;border-radius:50%;background:#FFB830;flex-shrink:0;"></div>
+            <span style="font-family:var(--fb);font-size:14px;color:var(--bt);">RBI Accessibility Guidelines compliance support</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:14px 18px;background:var(--bg);border-radius:12px;border:1px solid var(--cb);">
+            <div style="width:10px;height:10px;border-radius:50%;background:#5B4FCF;flex-shrink:0;"></div>
+            <span style="font-family:var(--fb);font-size:14px;color:var(--bt);">No hardware changes required - works on existing tablets</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:14px 18px;background:var(--bg);border-radius:12px;border:1px solid var(--cb);">
+            <div style="width:10px;height:10px;border-radius:50%;background:#00C9A7;flex-shrink:0;"></div>
+            <span style="font-family:var(--fb);font-size:14px;color:var(--bt);">Mobile SDK available for banking apps</span>
+          </div>
+        </div>
+      </div>
+      <!-- SVG: Bank branch scene -->
+      <div>
+        <svg viewBox="0 0 500 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;border-radius:20px;display:block;box-shadow:0 16px 48px rgba(45,42,142,.1);">
+          <defs>
+            <linearGradient id="bankBg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#EAF2FF"/><stop offset="100%" stop-color="#D8E8FF"/></linearGradient>
+            <linearGradient id="bankFloor" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#C8D8F0"/><stop offset="100%" stop-color="#B0C4E8"/></linearGradient>
+          </defs>
+          <!-- Background -->
+          <rect width="500" height="360" fill="url(#bankBg)"/>
+          <!-- Bank counter glass partition -->
+          <rect x="100" y="120" width="300" height="160" rx="4" fill="#D8EAF8" stroke="#A8C4E8" stroke-width="1.5" opacity=".8"/>
+          <rect x="100" y="120" width="300" height="10" rx="3" fill="#1A3A8E" opacity=".7"/>
+          <!-- Counter base -->
+          <rect x="80" y="240" width="340" height="30" rx="5" fill="#2A5ABE" opacity=".7"/>
+          <!-- SignISL Tablet on counter -->
+          <rect x="190" y="150" width="120" height="88" rx="8" fill="#0A0E1A" stroke="#2A3A6A" stroke-width="2"/>
+          <rect x="192" y="152" width="116" height="84" rx="7" fill="#0C1220"/>
+          <!-- Tablet screen glow -->
+          <rect x="194" y="154" width="112" height="80" rx="6" fill="rgba(91,79,207,.06)"/>
+          <!-- Avatar on tablet -->
+          <circle cx="225" cy="183" r="14" fill="#7B6FE8" opacity=".9"/>
+          <rect x="215" y="198" width="20" height="26" rx="6" fill="#5B4FCF" opacity=".85"/>
+          <line x1="215" y1="206" x2="205" y2="195" stroke="#9B8FF8" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="235" y1="206" x2="245" y2="195" stroke="#9B8FF8" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Tablet text -->
+          <text x="270" y="175" fill="rgba(255,255,255,.7)" font-size="7.5" font-family="sans-serif" font-weight="bold">ISL Banking</text>
+          <text x="270" y="187" fill="rgba(255,255,255,.45)" font-size="6.5" font-family="sans-serif">KYC Process</text>
+          <text x="270" y="198" fill="#00C9A7" font-size="7" font-family="sans-serif">Active</text>
+          <!-- Bank teller (behind partition) -->
+          <circle cx="370" cy="175" r="18" fill="#C8A880"/>
+          <path d="M353,175 Q353,155 370,152 Q387,155 387,175 Z" fill="#2A2A3A"/>
+          <rect x="352" y="194" width="36" height="50" rx="8" fill="#1A3A8E" opacity=".8"/>
+          <rect x="360" y="194" width="20" height="50" rx="4" fill="#142E7A" opacity=".6"/>
+          <!-- Deaf customer (in front) -->
+          <circle cx="138" cy="195" r="16" fill="#C09060"/>
+          <path d="M124,195 Q124,177 138,174 Q152,177 152,195 Z" fill="#0A0808"/>
+          <!-- Hearing aid indicator -->
+          <circle cx="150" cy="188" r="4" fill="#FFB830" opacity=".8"/>
+          <rect x="124" y="212" width="28" height="52" rx="7" fill="#5A7ABA" opacity=".85"/>
+          <!-- ISL hand gesture from customer -->
+          <ellipse cx="115" cy="210" rx="9" ry="7" fill="#C09060" transform="rotate(-20,115,210)"/>
+          <line x1="115" y1="203" x2="110" y2="195" stroke="#C09060" stroke-width="3" stroke-linecap="round"/>
+          <line x1="119" y1="203" x2="116" y2="194" stroke="#C09060" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Floor -->
+          <rect x="0" y="280" width="500" height="80" fill="url(#bankFloor)"/>
+          <!-- Bank logo area -->
+          <rect x="20" y="30" width="100" height="50" rx="8" fill="#1A3A8E" opacity=".9"/>
+          <text x="70" y="52" text-anchor="middle" fill="#fff" font-size="9" font-family="sans-serif" font-weight="bold">STATE BANK</text>
+          <text x="70" y="65" text-anchor="middle" fill="rgba(255,255,255,.7)" font-size="8" font-family="sans-serif">OF INDIA</text>
+          <!-- Accessibility sign -->
+          <rect x="370" y="30" width="110" height="38" rx="6" fill="#E8F0FF" stroke="#A8C0E8" stroke-width="1"/>
+          <circle cx="390" cy="49" r="6" fill="#2A5ABE" opacity=".7"/>
+          <text x="410" y="46" fill="#2A5ABE" font-size="7.5" font-family="sans-serif" font-weight="bold">ISL Accessible</text>
+          <text x="410" y="56" fill="#6A8ABE" font-size="6.5" font-family="sans-serif">Powered by SignISL</text>
+          <!-- Warm ambient glow -->
+          <rect width="500" height="360" fill="rgba(255,240,200,.03)"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How it Works -->
+<section class="section section-bg" style="padding:100px 0;">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">How It Works</span>
+      <h2 class="h2" style="margin-bottom:40px;">Independent Banking in Three Steps</h2>
+    </div>
+    <div class="how-row">
+      <div class="how-step">
+        <div class="ic" style="background:rgba(255,184,48,.12);margin-bottom:12px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFB830" stroke-width="2.5" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+        <div class="sn">STEP 01</div>
+        <h3>Customer Arrives</h3>
+        <ul><li>Deaf customer visits branch</li><li>Indicates ISL preference</li><li>Staff activates SignISL tablet</li></ul>
+      </div>
+      <div class="conn"><div class="conn-line"><div class="conn-dot" style="background:#FFB830;"></div></div></div>
+      <div class="how-step">
+        <div class="ic" style="background:rgba(91,79,207,.12);margin-bottom:12px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5B4FCF" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
+        <div class="sn">STEP 02</div>
+        <h3>ISL Conversation</h3>
+        <ul><li>Teller speaks, ISL avatar signs</li><li>Customer signs back via camera</li><li>AI interprets in real time</li></ul>
+      </div>
+      <div class="conn"><div class="conn-line"><div class="conn-dot" style="background:#00C9A7;"></div></div></div>
+      <div class="how-step">
+        <div class="ic" style="background:rgba(0,201,167,.12);margin-bottom:12px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00C9A7" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="sn">STEP 03</div>
+        <h3>Transaction Complete</h3>
+        <ul><li>Process completed independently</li><li>No interpreter needed</li><li>Full audit trail maintained</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Use Cases -->
+<section class="section section-white" style="padding:100px 0;">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Applications</span>
+      <h2 class="h2" style="margin-bottom:40px;">Banking &amp; Finance Use Cases</h2>
+    </div>
+    <div class="grid-3" style="gap:18px;">
+      <div class="card" style="padding:28px;border-left:4px solid #FFB830;"><div style="width:44px;height:44px;border-radius:12px;background:rgba(255,184,48,.1);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFB830" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><h3 class="h3" style="margin-bottom:8px;">Bank Branches</h3><p style="font-family:var(--fb);font-size:13px;color:var(--mu);line-height:1.7;">Counter service, account opening, KYC, queries - fully accessible via ISL tablet.</p></div>
+      <div class="card" style="padding:28px;border-left:4px solid #5B4FCF;"><div style="width:44px;height:44px;border-radius:12px;background:rgba(91,79,207,.1);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5B4FCF" stroke-width="2" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div><h3 class="h3" style="margin-bottom:8px;">Mobile Banking</h3><p style="font-family:var(--fb);font-size:13px;color:var(--mu);line-height:1.7;">App accessibility with ISL walkthrough guides and voice-to-ISL customer support.</p></div>
+      <div class="card" style="padding:28px;border-left:4px solid #00C9A7;"><div style="width:44px;height:44px;border-radius:12px;background:rgba(0,201,167,.1);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00C9A7" stroke-width="2" stroke-linecap="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></div><h3 class="h3" style="margin-bottom:8px;">ATM Assistance</h3><p style="font-family:var(--fb);font-size:13px;color:var(--mu);line-height:1.7;">ISL-guided ATM interface for accessible cash withdrawal and balance enquiries.</p></div>
+      <div class="card" style="padding:28px;border-left:4px solid #7B6FE8;"><div style="width:44px;height:44px;border-radius:12px;background:rgba(123,111,232,.1);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7B6FE8" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3 class="h3" style="margin-bottom:8px;">Insurance Services</h3><p style="font-family:var(--fb);font-size:13px;color:var(--mu);line-height:1.7;">Policy explanation, claims processing, and premium discussions in ISL.</p></div>
+      <div class="card" style="padding:28px;border-left:4px solid #FF6B6B;"><div style="width:44px;height:44px;border-radius:12px;background:rgba(255,107,107,.1);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF6B6B" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3 class="h3" style="margin-bottom:8px;">Loans &amp; Credit</h3><p style="font-family:var(--fb);font-size:13px;color:var(--mu);line-height:1.7;">Full loan application process explained and completed in ISL without interpreter.</p></div>
+      <div class="card" style="padding:28px;border-left:4px solid #FFB830;"><div style="width:44px;height:44px;border-radius:12px;background:rgba(255,184,48,.1);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFB830" stroke-width="2" stroke-linecap="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/></svg></div><h3 class="h3" style="margin-bottom:8px;">Financial Literacy</h3><p style="font-family:var(--fb);font-size:13px;color:var(--mu);line-height:1.7;">ISL-translated financial education videos on savings, investment, and banking.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:48px;">
+      <button onclick="openFounderModal()" class="btn btn-v" style="height:56px;padding:0 36px;font-size:16px;">Discuss Banking Integration →</button>
+    </div>
+  </div>
+</section>
+
+</main>
+<div id="footer-root"></div>
+<button id="stu" onclick="scrollTop()">↑</button>
+<script src="shared.js"></script>
+</body>
+</html>

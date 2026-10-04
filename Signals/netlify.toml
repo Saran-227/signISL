@@ -1,0 +1,26 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+
+[[headers]]
+  for = "/*.mp4"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    Accept-Ranges = "bytes"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/shared.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/shared.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
