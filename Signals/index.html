@@ -225,8 +225,10 @@
       <div id="islIframeWrapper" style="position:relative;width:100%;height:720px;background:#faf9f6;">
         <iframe 
           id="islLiveIframe" 
-          src="https://isl2.davuniversity.org/" 
+          src="about:blank"
+          data-src="https://isl2.davuniversity.org/" 
           title="SignISL Live Indian Sign Language Generator"
+          loading="lazy"
           allow="microphone *; camera *; autoplay *; display-capture *; clipboard-write *; fullscreen *"
           style="width:100%;height:100%;border:none;display:block;background:#faf9f6;">
         </iframe>
@@ -809,6 +811,39 @@ function toggleIframeFullscreen() {
     }
   }
 }
+
+// Ensure the page always lands at the top hero section and loads the iframe only on approach
+(function() {
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  window.scrollTo(0, 0);
+
+  const iframe = document.getElementById('islLiveIframe');
+  if (!iframe) return;
+
+  function activateIframe() {
+    const ds = iframe.getAttribute('data-src');
+    if (ds && iframe.getAttribute('src') === 'about:blank') {
+      iframe.setAttribute('src', ds);
+    }
+  }
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries, obs) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          activateIframe();
+          obs.disconnect();
+        }
+      });
+    }, { rootMargin: '350px 0px' });
+    const wrapper = document.getElementById('islIframeWrapper');
+    if (wrapper) observer.observe(wrapper);
+  } else {
+    window.addEventListener('scroll', activateIframe, { once: true, passive: true });
+  }
+})();
 </script>
 
 <script src="shared.js"></script>

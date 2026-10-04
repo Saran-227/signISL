@@ -11,8 +11,29 @@ const htmlFiles = fs.readdirSync(signalsDir)
     return entries;
   }, {});
 
+function copyStaticAssetsPlugin() {
+  return {
+    name: 'copy-static-assets',
+    closeBundle() {
+      const outDir = resolve(signalsDir, 'dist');
+      if (!fs.existsSync(outDir)) return;
+
+      const entries = fs.readdirSync(signalsDir, { withFileTypes: true });
+      for (const entry of entries) {
+        if (['dist', 'node_modules', '.git', '.vite'].includes(entry.name)) continue;
+        if (entry.name.endsWith('.html')) continue;
+        
+        const srcPath = resolve(signalsDir, entry.name);
+        const destPath = resolve(outDir, entry.name);
+        fs.cpSync(srcPath, destPath, { recursive: true, force: true });
+      }
+    }
+  };
+}
+
 export default defineConfig({
   root: 'Signals',
+  plugins: [copyStaticAssetsPlugin()],
   build: {
     outDir: 'dist',
     emptyOutDir: true,
