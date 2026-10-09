@@ -21,10 +21,11 @@ const NAVBAR_HTML = `
       <a href="index.html" class="nav-link" data-page="index">Home</a>
       <a href="about.html" class="nav-link" data-page="about">About</a>
       <div class="nav-dropdown">
-        <span class="nav-link" data-pages="demo,speech-isl,live-transcription,live-translation,widget,technology,classroom,hospital,government,home-family">
+        <a href="features.html" class="nav-link" data-pages="features,demo,speech-isl,live-transcription,live-translation,widget,technology,classroom,hospital,government,home-family" style="display:inline-flex;align-items:center;gap:4px;text-decoration:none;">
           Features <span class="nav-caret">▾</span>
-        </span>
+        </a>
         <div class="dropdown-menu">
+          <a href="features.html" class="dropdown-item" style="font-weight:700;border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:10px;margin-bottom:6px;"><span class="dropdown-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>All Features Overview</a>
           <a href="demo.html" class="dropdown-item"><span class="dropdown-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>Text to Indian Sign Language</a>
           <a href="speech-isl.html" class="dropdown-item"><span class="dropdown-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg></span>Speech to Indian Sign Language</a>
           <a href="live-transcription.html" class="dropdown-item"><span class="dropdown-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>Live Transcription</a>
@@ -65,6 +66,7 @@ const NAVBAR_HTML = `
   </div>
   <a href="index.html"             class="mobile-link">Home</a>
   <a href="about.html"             class="mobile-link">About</a>
+  <a href="features.html"          class="mobile-link">All Features</a>
   <a href="demo.html"              class="mobile-link">Text to ISL</a>
   <a href="speech-isl.html"        class="mobile-link">Speech to ISL</a>
   <a href="live-transcription.html" class="mobile-link">Live Transcription</a>
